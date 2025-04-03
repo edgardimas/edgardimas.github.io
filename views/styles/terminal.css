@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+.terminal-screen {
+  font-family: "Space Mono", monospace;
+  background-color: black;
+  color: #33ff33;
+  border-radius: 5px;
+  border: 1px solid gray;
+  text-align: left;
+  padding: 10px;
+  min-height: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.terminal-screen p {
+  margin: 5px 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.terminal-screen p:hover {
+  background-color: #33ff33;
+  color: black;
+}
+
+/* Style when in detail mode */
+.terminal-screen.detail-view {
+  background-color: #33ff33;
+  color: black;
+  padding: 15px;
+  position: relative;
+}
+
+.terminal-screen .back-button {
+  display: block;
+  background: black;
+  color: #33ff33;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-family: "Space Mono", monospace;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,76 @@
+.journey-list {
+  text-align: left;
+  margin: 0 100px;
+  padding: 0;
+}
+
+.journey-list a {
+  color: #788288;
+  text-decoration: none;
+}
+
+.journey-list li {
+  position: relative;
+  list-style-type: none;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.journey-list .phead {
+  display: inline;
+  margin: 0;
+  font-weight: bold;
+}
+
+.journey-list p {
+  margin-left: 30px;
+  margin: 0 35px;
+  text-align: justify;
+}
+
+.journey-list li span {
+  display: inline-block;
+  font-weight: 800;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  border-radius: 1em;
+  background: #309898;
+  color: white;
+  position: relative;
+}
+
+.journey-list li::before {
+  content: "";
+  position: absolute;
+  background: #309898;
+  z-index: -1;
+  top: -100px;
+  left: 13px;
+  width: 0.2em;
+  height: 10em;
+}
+
+.journey-list li:first-child::before {
+  display: none;
+}
+
+.journey-list .active {
+  background: dodgerblue;
+}
+
+.journey-list .active ~ li {
+  background: lightblue;
+}
+
+.journey-list .active ~ li::before {
+  background: lightblue;
+}
+
+.pagination-window {
+  width: 1300px;
+  height: 500px;
+  overflow-y: auto;
+  margin-top: 30px;
+}
