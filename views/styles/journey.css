@@ -13,7 +13,7 @@
   position: relative;
   list-style-type: none;
   text-align: left;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .journey-list .phead {
@@ -46,30 +46,20 @@
   position: absolute;
   background: #309898;
   z-index: -1;
-  top: -100px;
-  left: 13px;
+
+  /* Fix positioning */
+  top: 0; /* Start at the top of the list item */
+  left: 15px; /* Adjust to center */
   width: 0.2em;
-  height: 10em;
+  height: 100%;
 }
 
-.journey-list li:first-child::before {
+.journey-list li:last-child::before {
   display: none;
 }
 
-.journey-list .active {
-  background: dodgerblue;
-}
-
-.journey-list .active ~ li {
-  background: lightblue;
-}
-
-.journey-list .active ~ li::before {
-  background: lightblue;
-}
-
 .pagination-window {
-  width: 1300px;
+  width: 90%;
   height: 500px;
   overflow-y: auto;
   margin-top: 30px;

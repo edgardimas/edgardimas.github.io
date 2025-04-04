@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+@import "./about.css";
 @import "./journey.css";
 @import "./projects.css";
 @import "./terminal.css";
+@import "./contact.css";
 
 body {
   font-family: "Avant Garde", "Poppins", sans-serif;
@@ -16,6 +18,8 @@ section {
   background-color: rgb(240, 240, 240);
   margin: 10px 25px;
   border-radius: 25px;
+  padding: 40px;
+  text-align: center;
 }
 
 .horizontal-line {
@@ -55,22 +59,22 @@ section {
 
 header {
   background-color: #dcdcdc;
-  padding-left: 5px;
   color: Black;
+  font-style: italic;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.header-flex {
   display: flex;
   justify-content: space-between;
-  font-style: italic;
 }
 
 header .header-logo img {
   width: 60px;
   padding-top: 25px;
   padding-right: 10px;
-}
-
-.about-flex-container {
-  display: flex;
-  justify-content: space-between;
 }
 
 .section-header {
@@ -80,7 +84,7 @@ header .header-logo img {
   height: 50px;
 }
 
-.about-me-head {
+.section-head {
   margin-left: 5px;
 }
 
@@ -88,30 +92,6 @@ header .header-logo img {
   width: 10px;
   height: 30px;
   padding-top: 20px;
-}
-
-.about-me {
-  width: 700px;
-  border: 1px solid;
-  border-radius: 10px;
-}
-
-.about-me-paragraph {
-  text-align: justify;
-  margin: 10px 30px;
-}
-
-.space-pict img {
-  width: 500px;
-  padding-top: 25px;
-  padding-right: 10px;
-}
-
-.profile-pict img {
-  margin-top: 10px;
-  width: 100px;
-  padding-top: 25px;
-  padding-right: 10px;
 }
 
 .main-brand {
@@ -124,6 +104,7 @@ header .header-logo img {
 
 .logo-brand {
   display: flex;
+  margin-left: 5px;
 }
 
 nav ul {
@@ -146,14 +127,13 @@ nav ul li a {
   font-weight: bold;
 }
 
-section {
-  padding: 40px;
-  text-align: center;
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-#about {
-  color: black;
-  background-color: rgb(240, 240, 240);
-  margin: 10px 25px;
-  border-radius: 25px;
+.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

@@ -16,8 +16,9 @@
 
 .projects-flex-container {
   display: flex;
-  width: 1350px; /* Adjust width */
+  width: 95%; /* Adjust width */
   overflow-x: auto; /* Enable horizontal scrolling */
   white-space: nowrap; /* Prevent items from wrapping */
   padding: 10px 20px;
+  margin-left: 5px;
 }

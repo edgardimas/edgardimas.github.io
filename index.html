@@ -8,35 +8,39 @@
   </head>
   <body>
     <header>
-      <div class="logo-brand">
-        <div class="header-logo">
-          <img src="./views/assets/machine.png" alt="logo" />
-        </div>
-        <div>
-          <h1 class="main-brand">Ed's Explorer Log</h1>
-          <p class="tagline">Exploring the universe through code</p>
-        </div>
+      <div class="header-flex">
+           <div class="logo-brand">
+            <div class="header-logo">
+              <img src="./views/assets/machine.png" alt="logo" />
+            </div>
+            <div>
+              <h1 class="main-brand">Ed's Explorer Log</h1>
+              <p class="tagline">Exploring the universe through code</p>
+            </div>
+           </div>
+    
+          <nav>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
       </div>
-
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      
+      <div class="flex-line">
+        <div class="horizontal-line line-red"></div>
+        <div class="horizontal-line line-orange"></div>
+        <div class="horizontal-line line-teal"></div>
+      </div>
     </header>
 
-    <div class="flex-line">
-      <div class="horizontal-line line-red"></div>
-      <div class="horizontal-line line-orange"></div>
-      <div class="horizontal-line line-teal"></div>
-    </div>
+ 
 
     <section id="about" class="section" >
       <div class="section-header">
         <img src="./views/assets/color.png" alt="color" class="color"/>
-        <h2 class="about-me-head">About Me</h2>
+        <h2 class="section-head">About Me</h2>
       </div>
       <div class="about-flex-container">
         <div class="space-pict">
@@ -58,15 +62,15 @@
     <section id="journey" class="section">   
         <div class="section-header">
             <img src="./views/assets/color.png" alt="color" class="color"/>
-            <h2 class="about-me-head">My Journey</h2>
+            <h2 class="section-head">My Journey</h2>
         </div>
         <div class="pagination-window">
         <ul class="journey-list">
             <li>
                 <span>></span>
                 <p class="phead">Create account.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore consequatur distinctio ex velit ratione quae provident, nulla architecto voluptate praesentium rem. Earum quas voluptatem praesentium et blanditiis quasi alias rerum!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis dolore alias, quae consectetur, labore reiciendis soluta quam laborum optio dicta aut rerum. Sapiente beatae libero ad a consectetur alias vitae!</p>
+                <p class="pbody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore consequatur distinctio ex velit ratione quae provident, nulla architecto voluptate praesentium rem. Earum quas voluptatem praesentium et blanditiis quasi alias rerum!</p>
+                <p class="pbody">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis dolore alias, quae consectetur, labore reiciendis soluta quam laborum optio dicta aut rerum. Sapiente beatae libero ad a consectetur alias vitae!</p>
             </li>
             <li>
                 <span>></span>
@@ -97,7 +101,7 @@
     <section id="projects">
         <div class="section-header">
             <img src="./views/assets/color.png" alt="color" class="color"/>
-            <h2 class="about-me-head">Projects</h2>
+            <h2 class="section-head">Projects</h2>
         </div>
       <div class="projects-flex-container">
         <div class="project">
@@ -128,18 +132,33 @@
     <section id="terminal">
         <div class="section-header">
             <img src="./views/assets/color.png" alt="color" class="color"/>
-            <h2 class="about-me-head">Terminal</h2>
+            <h2 class="section-head">Terminal</h2>
         </div>
         <div class="terminal-screen" id="terminal">
             <p onclick="showDetail(1)">First log entry...</p>
             <p onclick="showDetail(2)">Second log entry...</p>
             <p onclick="showDetail(3)">Third log entry...</p>
-          </div>
+        </div>
     </section>
 
-    <footer id="contact">
-        <p>Email: your.email@example.com</p>
-    </footer>
+    <div class="horizontal-line-2 line-red"></div>
+
+    <section id="contact">
+        <div class="section-header">
+            <img src="./views/assets/color.png" alt="color" class="color"/>
+            <h2 class="section-head">Contact</h2>
+        </div>
+         <div class="contact-flex-container">
+            <div class="contact-image">
+                <img src="./views/assets/astronaut.png" alt="astronaut" class="astronaut"/>
+            </div>
+            <div class="contact-info">
+                <h3>For contact, you can email me at:</h3>
+                <p>Email: your.email@example.com</p>
+                <h3>Or, you can find me on any of these platform</h3>
+            </div>
+         </div>
+    </section>
 
     <script src="script.js"></script>
   </body>

@@ -1,0 +1,52 @@
+.about-flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-me {
+  border: 1px solid;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.about-me-paragraph {
+  text-align: justify;
+  margin: 10px 30px;
+}
+
+.space-pict {
+  width: 50%;
+}
+
+.space-pict img {
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.profile-pict img {
+  margin-top: 10px;
+  width: 100px;
+  padding-top: 25px;
+  padding-right: 10px;
+}
+
+@media (max-width: 990px) {
+  /* Adjust for tablet & smartphone */
+  .space-pict img {
+    display: none; /* Hide images */
+  }
+
+  .about-me {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .about-flex-container {
+    flex-direction: column; /* Stack elements instead of side-by-side */
+    align-items: flex-start;
+  }
+}

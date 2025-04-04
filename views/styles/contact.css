@@ -1,0 +1,24 @@
+.contact-flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-image {
+  margin: 10px 20px;
+  width: 50%;
+}
+
+.contact-image img {
+  flex-grow: 1;
+  min-width: 200px;
+  max-width: 300px;
+  height: auto;
+}
+
+.contact-info {
+  margin: 10px 20px;
+  width: 50%;
+  text-align: left;
+}
