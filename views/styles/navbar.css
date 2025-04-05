@@ -1,0 +1,19 @@
+header {
+  background-color: #dcdcdc;
+  color: Black;
+  font-style: italic;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .header-logo img {
+  width: 60px;
+  padding-top: 25px;
+  padding-right: 10px;
+}

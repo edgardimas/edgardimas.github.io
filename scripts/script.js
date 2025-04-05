@@ -1,4 +1,5 @@
-// Store log details
+import { projects } from "./projects.js";
+const colors = ["red", "yellow", "green"];
 
 const logDetails = {
   1: `Detail about the first log entry. This is an explanation of what happened. 
@@ -74,4 +75,32 @@ document.addEventListener("DOMContentLoaded", () => {
     section.classList.add("hidden");
     observer.observe(section);
   });
+});
+
+const projectContainer = document.getElementById("projects-container");
+console.log(projects);
+
+projects.forEach((project, index) => {
+  const projectDiv = document.createElement("div");
+  projectDiv.classList.add("project");
+  if (index % 3 == 0) {
+    projectDiv.innerHTML = `
+    <h3>${project.title}</h3>
+    <div class="horizontal-line-3 line-red"></div>
+    <p>${project.description}</p>
+    `;
+  } else if (index % 3 == 1) {
+    projectDiv.innerHTML = `
+    <h3>${project.title}</h3>
+    <div class="horizontal-line-3 line-orange"></div>
+    <p>${project.description}</p>
+    `;
+  } else {
+    projectDiv.innerHTML = `
+    <h3>${project.title}</h3>
+    <div class="horizontal-line-3 line-teal"></div>
+    <p>${project.description}</p>
+    `;
+  }
+  projectContainer.appendChild(projectDiv);
 });
