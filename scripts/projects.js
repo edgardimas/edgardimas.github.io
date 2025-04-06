@@ -12,13 +12,13 @@ export const projects = [
   {
     title: "RSUD Matraman LIS Implementation Project",
     description:
-      "Established LIS for RSUD Matraman. The Goal is to established a system to make it easire for analyst to record events.",
+      "Established LIS for RSUD Matraman. The Goal is to established a system to make it easier for analyst to record events.",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE5ctN8kfuHGSx8JAMKY6HhlV9grHr6cisOg&s",
     detail:
-      "This was the first time I became the Person in Charge (PIC) for a Laboratory Information System (LIS) project at PT.Sysmex Indonesia. I applied foundational knowledge of LIS workflows, including pathologist clinical processes and quality control (QC). This project also helped me improve my communication skills through direct interaction with end users.",
+      "Led the end-to-end deployment of the LIS, including system configuration, user requirement gathering, test mapping, and training. Facilitated seamless bridging between the LIS and laboratory instruments, ensuring compatibility and accurate data exchange. Collaborated closely with medical technologists and IT teams during UAT (User Acceptance Testing) and go-live support.",
     skills:
-      "Basic Pathologist Clinic module, User Communiacation and Training, Basic Networking",
+      "LIS automation integration, device interfacing and bridging, barcode and sample tracking systems, troubleshooting hardware–software communication, and lab staff and IT teams collaboration",
   },
   {
     title: "RSUD Tugu Koja Analyzer LIS Link Project",
@@ -37,16 +37,16 @@ export const projects = [
     image:
       "https://cdn-healthcare.hellohealthgroup.com/hospitals/id/rs-royal-prima-medan-120220211.png",
     detail:
-      "Configured and tested the integration of the BC-Robo 7 sample handling system with the LIS. Ensured accurate sample ID recognition and barcode scanning functionality. Worked alongside clinical staff to validate performance and troubleshoot communication issues during the go-live phase.",
+      "This was the first time I became the Person in Charge (PIC) for a Laboratory Information System (LIS) project at PT.Sysmex Indonesia. I applied foundational knowledge of LIS workflows, including pathologist clinical processes and quality control (QC). This project also helped me improve my communication skills through direct interaction with end users.",
     skills:
-      "LIS automation integration, device interfacing and bridging, barcode and sample tracking systems, troubleshooting hardware–software communication, and lab staff and IT teams collaboration",
+      "Basic Pathologist Clinic module, User Communiacation and Training, Basic Networking",
   },
   {
     title: "RS Kariadi BC-ROBO 7 Implementation",
     description: "BC-Robo 7 Implementation",
     image: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Rs.Karyadi.JPG",
     detail:
-      "Led the end-to-end deployment of the LIS, including system configuration, user requirement gathering, test mapping, and training. Facilitated seamless bridging between the LIS and laboratory instruments, ensuring compatibility and accurate data exchange. Collaborated closely with medical technologists and IT teams during UAT (User Acceptance Testing) and go-live support.",
+      "Configured and tested the integration of the BC-Robo 7 sample handling system with the LIS. Ensured accurate sample ID recognition and barcode scanning functionality. Worked alongside clinical staff to validate performance and troubleshoot communication issues during the go-live phase.",
     skills: "BC-Robo 7 knowledge, TCP/IP Communication",
   },
   {

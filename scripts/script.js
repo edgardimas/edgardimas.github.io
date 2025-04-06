@@ -35,7 +35,7 @@ window.showDetail = function (id) {
 };
 
 // Function to restore the original log list
-function goBack() {
+window.goBack = function () {
   const terminal = document.getElementById("terminal");
 
   if (!terminal) {
@@ -55,7 +55,7 @@ function goBack() {
             <p onclick="showDetail(3)">Third log entry...</p>
           </div>
     `;
-}
+};
 
 document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("section");
