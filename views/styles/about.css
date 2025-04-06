@@ -51,4 +51,18 @@
     flex-direction: column; /* Stack elements instead of side-by-side */
     align-items: flex-start;
   }
+
+  .about-me-p-container {
+    height: 100px;
+    overflow-y: auto;
+  }
+
+  .about-me h2 {
+    font-size: 1rem;
+  }
+
+  .about-me-p-container p {
+    font-size: 0.8rem;
+    text-align: left;
+  }
 }

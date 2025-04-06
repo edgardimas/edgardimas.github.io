@@ -22,3 +22,13 @@
   width: 50%;
   text-align: left;
 }
+
+@media (max-width: 1050px) {
+  .contact-image {
+    display: none;
+  }
+
+  .contact-info {
+    font-size: 0.8rem;
+  }
+}

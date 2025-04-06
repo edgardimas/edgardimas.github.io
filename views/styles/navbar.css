@@ -15,8 +15,8 @@ header {
   margin-bottom: 10px;
 }
 
-header .header-logo img {
-  width: 60px;
+.header-logo img {
+  max-width: 60px;
   padding-top: 25px;
   padding-right: 10px;
 }
@@ -68,7 +68,7 @@ header .header-logo img {
   display: none;
   background: none;
   border: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: black;
   cursor: pointer;
 }
@@ -97,5 +97,18 @@ header .header-logo img {
 
   .menu-toggle {
     display: block;
+  }
+
+  .main-brand {
+    font-size: 1rem; /* Adjust as needed */
+  }
+
+  .tagline {
+    font-size: 0.5rem; /* Adjust as needed */
+  }
+
+  .header-logo img {
+    width: 20px !important;
+    margin-top: -9px;
   }
 }

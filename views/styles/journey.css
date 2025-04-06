@@ -75,3 +75,32 @@
   list-style-type: disc;
   color: black;
 }
+
+@media (max-width: 768px) {
+  .pagination-window {
+    height: 300px;
+  }
+
+  .journey-list {
+    width: 100%;
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  .journey-list p {
+    text-align: left;
+  }
+
+  .pagination-window {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .journey-list li span {
+    left: 0; /* optional tweak if dots misalign */
+  }
+
+  .dot-line::before {
+    left: 9px;
+  }
+}
