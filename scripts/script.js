@@ -12,7 +12,7 @@ const logDetails = {
 };
 
 // Function to update only the <p> inside terminal
-function showDetail(id) {
+window.showDetail = function (id) {
   const terminal = document.getElementById("terminal");
 
   if (!terminal || !logDetails[id]) {
@@ -22,17 +22,17 @@ function showDetail(id) {
 
   // Keep terminal structure and styling intact
   terminal.innerHTML = `
-     <div class="section-header">
-            <img src="./views/assets/color.png" alt="color" class="color"/>
-            <h2 class="about-me-head">Terminal</h2>
-        </div>
-        <div class="terminal-screen" id="terminal">
-            <p class="log-detail">${logDetails[id]}</p>
-              <button class="back-button" onclick="goBack()">← Back</button>
+       <div class="section-header">
+              <img src="./views/assets/color.png" alt="color" class="color"/>
+              <h2 class="section-head">Terminal</h2>
           </div>
-    
-    `;
-}
+          <div class="terminal-screen" id="terminal">
+              <p class="log-detail">${logDetails[id]}</p>
+                <button class="back-button" onclick="goBack()">← Back</button>
+            </div>
+      
+      `;
+};
 
 // Function to restore the original log list
 function goBack() {
@@ -77,30 +77,77 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+function showProjectModal(project) {
+  const modal = document.getElementById("project-modal");
+  const title = document.getElementById("modal-title");
+  const desc = document.getElementById("modal-description");
+  const image = document.getElementById("modal-image");
+  const closeButton = modal.querySelector(".close-button");
+  const detail = document.getElementById("modal-detail-description");
+  const skill = document.getElementById("modal-skill-applied");
+
+  title.textContent = project.title;
+  desc.textContent = project.description;
+  image.src = project.image;
+  detail.textContent = project.detail || "No additional details provided.";
+  skill.textContent = project.skills || "No specific skills listed.";
+
+  modal.classList.remove("hidden2");
+  document.body.classList.add("modal-open");
+
+  closeButton.onclick = () => {
+    modal.classList.add("hidden2");
+    document.body.classList.remove("modal-open");
+  };
+
+  // Close modal when clicking outside the modal content
+  modal.onclick = (e) => {
+    if (e.target === modal) {
+      modal.classList.add("hidden2");
+      document.body.classList.remove("modal-open");
+    }
+  };
+}
+
 const projectContainer = document.getElementById("projects-container");
-console.log(projects);
 
 projects.forEach((project, index) => {
   const projectDiv = document.createElement("div");
   projectDiv.classList.add("project");
-  if (index % 3 == 0) {
-    projectDiv.innerHTML = `
-    <h3>${project.title}</h3>
-    <div class="horizontal-line-3 line-red"></div>
-    <p>${project.description}</p>
-    `;
-  } else if (index % 3 == 1) {
-    projectDiv.innerHTML = `
-    <h3>${project.title}</h3>
-    <div class="horizontal-line-3 line-orange"></div>
-    <p>${project.description}</p>
-    `;
+
+  let buttonColorClass = "";
+  let lineClass = "";
+
+  if (index % 3 === 0) {
+    buttonColorClass = "red-button";
+    lineClass = "line-red";
+  } else if (index % 3 === 1) {
+    buttonColorClass = "orange-button";
+    lineClass = "line-orange";
   } else {
-    projectDiv.innerHTML = `
-    <h3>${project.title}</h3>
-    <div class="horizontal-line-3 line-teal"></div>
-    <p>${project.description}</p>
-    `;
+    buttonColorClass = "teal-button";
+    lineClass = "line-teal";
   }
+
+  projectDiv.innerHTML = `
+    <h3>${project.title}</h3>
+    <div class="horizontal-line-3 ${lineClass}"></div>
+    <p>${project.description}</p>
+    <button class="detail-button black-button" data-index="${index}">Details</button>
+  `;
+
   projectContainer.appendChild(projectDiv);
+
+  // Add event listener to the newly created button
+  const detailButton = projectDiv.querySelector(".detail-button");
+  detailButton.addEventListener("click", () => {
+    showProjectModal(project);
+  });
+});
+
+const toggleBtn = document.getElementById("menu-toggle");
+const navItems = document.getElementById("nav-items");
+
+toggleBtn.addEventListener("click", () => {
+  navItems.classList.toggle("show");
 });

@@ -9,33 +9,36 @@
   <body>
     <header>
       <div class="header-flex">
-           <div class="logo-brand">
-            <div class="header-logo">
-              <img src="./views/assets/machine.png" alt="logo" />
-            </div>
-            <div>
-              <h1 class="main-brand">Ed's Explorer Log</h1>
-              <p class="tagline">Exploring the universe through code</p>
-            </div>
-           </div>
-    
+        <div class="logo-brand">
+          <div class="header-logo">
+            <img src="./views/assets/machine.png" alt="logo" />
+          </div>
+          <div>
+            <h1 class="main-brand">Ed's Explorer Log</h1>
+            <p class="tagline">Exploring the universe through code</p>
+          </div>
+        </div>
+        
+        <div class="nav-wrapper">
+          <button class="menu-toggle" id="menu-toggle">☰</button> 
           <nav>
-            <ul>
-              <li><a href="#about">About</a></li>
+            <ul class="nav-container" id="nav-items">
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#journey">My Journey</a></li>
               <li><a href="#projects">Projects</a></li>
+              <li><a href="#terminal">Terminal</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
+        </div>
       </div>
-      
+    
       <div class="flex-line">
         <div class="horizontal-line line-red"></div>
         <div class="horizontal-line line-orange"></div>
         <div class="horizontal-line line-teal"></div>
       </div>
     </header>
-
- 
 
     <section id="about" class="section" >
       <div class="section-header">
@@ -66,29 +69,63 @@
         </div>
         <div class="pagination-window">
         <ul class="journey-list">
-            <li>
+            <li class="dot-line">
                 <span>></span>
-                <p class="phead">Create account.</p>
-                <p class="pbody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore consequatur distinctio ex velit ratione quae provident, nulla architecto voluptate praesentium rem. Earum quas voluptatem praesentium et blanditiis quasi alias rerum!</p>
-                <p class="pbody">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis dolore alias, quae consectetur, labore reiciendis soluta quam laborum optio dicta aut rerum. Sapiente beatae libero ad a consectetur alias vitae!</p>
+                <p class="phead">PT. Sysmex Indonesia</p>
+                <p class="pdate">April 2024 - April 2025</p>
+                <p class="prole"> IT Specialist</p>
+                <p class="pdesc">
+                  Responsible for end-to-end Laboratory Information System (LIS) implementation, including system configuration, integration with laboratory analyzers, and conducting comprehensive user training sessions. Ensured seamless communication between LIS and medical devices through custom uploader solutions.
+                </p>
+                <p>My Achievements:</p>
+                <ul class="pachievement">
+                  <li>Project-in-Charge (PIC) for LIS deployment at RSUD Matraman.</li>
+                  <li>Successfully developed the Uploader Project to enable HIS-LIS integration.</li>
+                  <li>More than 50 cases solved.</li>
+                </ul>
             </li>
-            <li>
+            <li class="dot-line">
                 <span>></span>
-                <p class="phead">Create account.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore consequatur distinctio ex velit ratione quae provident, nulla architecto voluptate praesentium rem. Earum quas voluptatem praesentium et blanditiis quasi alias rerum!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis dolore alias, quae consectetur, labore reiciendis soluta quam laborum optio dicta aut rerum. Sapiente beatae libero ad a consectetur alias vitae!</p>
+                <p class="phead">PT. Tawada Healthcare</p>
+                <p class="pdate">July 2022 - January 2024</p>
+                <p class="prole"> Lab Integration Specialist</p>
+                <p class="pdesc">
+                  Implemented Laboratory Information Systems (LIS) and BC-Robo 7 across multiple hospitals, including designing network topology, configuring serial and Ethernet communication, conducting user meetings, and providing training. Additionally contributed to sales efforts through participation in booth events, market research, and tender activities.
+                </p>
+                <p>My Achievements:</p>
+                <ul class="pachievement">
+                  <li>Project-in-Charge (PIC) for LIS deployment at RSU Royal Prima.</li>
+                  <li>Successfully implemented BC-Robo 7 at RSUD Kariadi.</li>
+                  <li>Helped to sold a BC-Robo 7 unit</li>
+                </ul>
             </li>
-            <li>
-                <span>></span>
-                <p class="phead">Create account.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore consequatur distinctio ex velit ratione quae provident, nulla architecto voluptate praesentium rem. Earum quas voluptatem praesentium et blanditiis quasi alias rerum!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis dolore alias, quae consectetur, labore reiciendis soluta quam laborum optio dicta aut rerum. Sapiente beatae libero ad a consectetur alias vitae!</p>
+            <li class="dot-line">
+              <span>></span>
+              <p class="phead">iFORCOM Co., Ltd.</p>
+              <p class="pdate">Augustus 2021 - October 2021</p>
+              <p class="prole"> IT Specialist</p>
+              <p class="pdesc">
+                Conducted marketing research by contacting and interviewing several companies in Indonesia, concluding that the products required improvements to better fit the local market.
+              </p>
+              <p>My Achievements:</p>
+              <ul class="pachievement">
+                <li>Presented the ideas of possible improvement to the head of iForcom’s department of Innovation and Technology in full Japanese.</li>
+                <li>Managed to match iForcom with PT. Tiga Pilar and led meetings for collaborations.</li>
+              </ul>
             </li>
-            <li>
-                <span>></span>
-                <p class="phead">Create account.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore consequatur distinctio ex velit ratione quae provident, nulla architecto voluptate praesentium rem. Earum quas voluptatem praesentium et blanditiis quasi alias rerum!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis dolore alias, quae consectetur, labore reiciendis soluta quam laborum optio dicta aut rerum. Sapiente beatae libero ad a consectetur alias vitae!</p>
+            <li class="dot-line">
+              <span>></span>
+              <p class="phead">PT. Sysmex Indonesia</p>
+              <p class="pdate">Augustus 2021 - October 2021</p>
+              <p class="prole"> IT Specialist</p>
+              <p class="pdesc">
+                Responsible for end-to-end Laboratory Information System (LIS) implementation, including system configuration, integration with laboratory analyzers, and conducting comprehensive user training sessions. Ensured seamless communication between LIS and medical devices through custom uploader solutions.
+              </p>
+              <ul class="pachievement">
+                <li>Project-in-Charge (PIC) for LIS deployment at RSUD Matraman.</li>
+                <li>Successfully developed the Uploader Project to enable HIS-LIS integration.</li>
+                <li>More than 50 cases solved.</li>
+              </ul>
             </li>
         
         </ul>
@@ -104,7 +141,6 @@
             <h2 class="section-head">Projects</h2>
         </div>
         <div id="projects-container" class="projects-flex-container"></div>
-        
     </section>
 
     <div class="horizontal-line-2 line-teal"></div>
@@ -141,6 +177,27 @@
     </section>
 
   
+    <div id="project-modal" class="modal hidden2">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div class="modal-flex-container">
+          <div class="image-container">
+            <img id="modal-image"  style="max-width: 100%; margin-top: 1rem">
+          </div>
+          <div class="detail-container"> 
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+          </div>
+        </div>
+        <div class="modal-details-container">
+          <h3>More in Detail</h3>
+          <p id="modal-detail-description"></p>
+          <h3>Skill Applied</h3>
+          <p id="modal-skill-applied"></p>
+        
+        </div>
+      </div>
+    </div>
 
     <script type="module" src="./scripts/script.js"></script>
   </body>

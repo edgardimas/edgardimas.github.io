@@ -5,6 +5,11 @@
 @import "./projects.css";
 @import "./terminal.css";
 @import "./contact.css";
+@import "./modal.css";
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Avant Garde", "Poppins", sans-serif;
@@ -21,6 +26,7 @@ section {
   border-radius: 25px;
   padding: 40px;
   text-align: center;
+  scroll-margin-top: 80px;
 }
 
 .horizontal-line {

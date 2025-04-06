@@ -10,10 +10,94 @@ header {
 .header-flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 header .header-logo img {
   width: 60px;
   padding-top: 25px;
   padding-right: 10px;
+}
+
+.tagline {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.main-brand,
+.tagline {
+  padding: 0;
+}
+
+.nav-wrapper {
+  padding-top: 20px;
+}
+
+.nav-container {
+  display: flex;
+  list-style: none;
+}
+
+.nav-container li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 8px 12px; /* Add some clickable space */
+  display: inline-block; /* So padding works nicely */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-container li a:hover {
+  background-color: black;
+  color: white;
+}
+
+.nav-wrapper {
+  position: relative;
+}
+
+.nav-wrapper nav,
+.nav-container {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 1050px) {
+  .nav-container {
+    display: none;
+    position: absolute;
+    top: 100%; /* right below the nav-wrapper */
+    right: 0;
+    background-color: #000;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #444;
+    z-index: 10;
+  }
+
+  .nav-container li a {
+    color: white;
+  }
+
+  .nav-container.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }

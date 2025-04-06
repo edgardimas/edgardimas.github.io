@@ -21,6 +21,7 @@
 .project p {
   font-size: 0.81rem;
   text-align: justify;
+  height: 135px;
 }
 
 .project h3 {
@@ -40,4 +41,21 @@
   white-space: nowrap; /* Prevent items from wrapping */
   padding: 10px 20px;
   margin-left: 5px;
+}
+
+.detail-button {
+  border-radius: 25px;
+  color: white;
+  height: 30px;
+  width: 100px;
+  border: 0;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.black-button {
+  background-color: black;
+
+
+.teal-button {
+  background-color: ;
 }
