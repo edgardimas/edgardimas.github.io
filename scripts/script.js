@@ -147,3 +147,12 @@ const navItems = document.getElementById("nav-items");
 toggleBtn.addEventListener("click", () => {
   navItems.classList.toggle("show");
 });
+
+window.addEventListener("DOMContentLoaded", () => {
+  fetch("../components/navbar.html")
+    .then((response) => response.text())
+    .then((html) => {
+      document.getElementById("header-placeholder").innerHTML = html;
+    })
+    .catch((err) => console.error("Failed to load header:", err));
+});
