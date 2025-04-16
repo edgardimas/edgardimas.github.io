@@ -1,0 +1,17 @@
+.astronaut-img {
+  width: 300px;
+}
+
+.welcome-container {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  gap: 1.25rem;
+  text-align: justify;
+}
+
+.welcome-paragraph {
+  text-align: justify;
+}

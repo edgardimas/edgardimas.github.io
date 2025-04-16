@@ -7,6 +7,7 @@
 @import "./contact.css";
 @import "./modal.css";
 @import "./landing.css";
+@import "./welcome.css";
 
 html {
   scroll-behavior: smooth;
