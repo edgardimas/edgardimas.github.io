@@ -91,44 +91,61 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// const countdownText = document.getElementById("countdown-text");
-// const skipBtn = document.getElementById("skip-btn");
-// const messages = [
-//   "Commencing Journey in ... 3",
-//   "Commencing Journey in ... 2",
-//   "Commencing Journey in ... 1",
-//   "We have a lift off",
-// ];
+const countdownText = document.getElementById("countdown-text");
+const skipBtn = document.getElementById("skip-btn");
+const messages = [
+  "Commencing Journey in ... 3",
+  "Commencing Journey in ... 2",
+  "Commencing Journey in ... 1",
+  "We have a lift off",
+];
 
-// let index = 0;
-// let interval;
+let index = 0;
+let interval;
 
-// // Lock scroll initially
-// document.body.classList.add("noscroll");
+function startCountdown() {
+  interval = setInterval(() => {
+    countdownText.textContent = messages[index];
+    index++;
 
-// function startCountdown() {
-//   interval = setInterval(() => {
-//     countdownText.textContent = messages[index];
-//     index++;
+    if (index === messages.length) {
+      clearInterval(interval);
+      finishIntro();
+    }
+  }, 1000);
+}
 
-//     if (index === messages.length) {
-//       clearInterval(interval);
-//       finishIntro();
-//     }
-//   }, 1000);
-// }
+function finishIntro() {
+  const nextSection = document.getElementById("welcome");
+  nextSection.scrollIntoView({ behavior: "smooth" });
+}
 
-// function finishIntro() {
-//   document.body.classList.remove("noscroll");
-//   const nextSection = document.getElementById("about");
-//   nextSection.scrollIntoView({ behavior: "smooth" });
-// }
+// Start countdown
+startCountdown();
 
-// // Start countdown
-// startCountdown();
+document.addEventListener("DOMContentLoaded", () => {
+  const checkBtn = document.getElementById("check-code-btn");
+  const codeInput = document.getElementById("code-input");
+  const feedback = document.getElementById("code-feedback");
 
-// // Handle skip
-// skipBtn.addEventListener("click", () => {
-//   clearInterval(interval); // stop countdown
-//   finishIntro(); // skip to next section
-// });
+  const correctCode = `#include <stdio.h>
+
+int main() {
+    printf("Hello, World!\\n");
+    return 0;
+}`;
+
+  checkBtn.addEventListener("click", () => {
+    const userCode = codeInput.value.trim();
+    const normalizedUserCode = userCode.replace(/\s+/g, "");
+    const normalizedCorrectCode = correctCode.replace(/\s+/g, "");
+
+    if (normalizedUserCode === normalizedCorrectCode) {
+      feedback.textContent = "Great job, cadet! You're ready for the console.";
+      feedback.style.color = "green";
+    } else {
+      feedback.textContent = "Oops! Double-check your syntax and try again.";
+      feedback.style.color = "red";
+    }
+  });
+});

@@ -1,0 +1,22 @@
+.code-challenge-container {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#code-input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 200px;
+}
+
+button {
+  margin-left: 10px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#result-message {
+  margin-top: 10px;
+  font-weight: bold;
+}

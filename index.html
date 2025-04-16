@@ -23,7 +23,7 @@
           <button class="menu-toggle" id="menu-toggle">☰</button>
           <nav>
             <ul class="nav-container" id="nav-items">
-              <li><a href="/">Home</a></li>
+              <li><a href="/#welcome">Home</a></li>
               <li><a href="/console">Console</a></li>
               <li><a href="/library">Library</a></li>
               <li><a href="/quiz">Quiz</a></li>
@@ -42,14 +42,13 @@
 
     <div id="landing" class="section">
       <img src="./views/assets/earth.png" alt="color" />
-      <div class="header-text-container">
+      <div class="header-text-container" style="color: rgb(145, 145, 145)">
         <h1>Welcome, Explorer</h1>
         <p>
           Strap in, get comfortable, and prepare for liftoff — your adventure in
           coding begins now.
         </p>
         <h2 id="countdown-text">Commencing Journey in ... 3</h2>
-        <button id="skip-btn">Skip Animation</button>
       </div>
     </div>
 
@@ -99,105 +98,36 @@
 
     <div class="horizontal-line-2 line-red"></div>
 
-    <section id="journey" class="section">
+    <section id="first-code" class="section">
       <div class="section-header">
         <img src="./views/assets/color.png" alt="color" class="color" />
-        <h2 class="section-head">My Journey</h2>
+        <h2 class="section-head">First Code</h2>
       </div>
-      <div class="pagination-window">
-        <ul class="journey-list">
-          <li class="dot-line">
-            <span>></span>
-            <p class="phead">PT. Sysmex Indonesia</p>
-            <p class="pdate">April 2024 - April 2025</p>
-            <p class="prole">IT Specialist</p>
-            <p class="pdesc">
-              Responsible for end-to-end Laboratory Information System (LIS)
-              implementation, including system configuration, integration with
-              laboratory analyzers, and conducting comprehensive user training
-              sessions. Ensured seamless communication between LIS and medical
-              devices through custom uploader solutions.
-            </p>
-            <p>My Achievements:</p>
-            <ul class="pachievement">
-              <li>
-                Project-in-Charge (PIC) for LIS deployment at RSUD Matraman.
-              </li>
-              <li>
-                Successfully developed the Uploader Project to enable HIS-LIS
-                integration.
-              </li>
-              <li>More than 50 cases solved.</li>
-            </ul>
-          </li>
-          <li class="dot-line">
-            <span>></span>
-            <p class="phead">PT. Tawada Healthcare</p>
-            <p class="pdate">July 2022 - January 2024</p>
-            <p class="prole">Lab Integration Specialist</p>
-            <p class="pdesc">
-              Implemented Laboratory Information Systems (LIS) and BC-Robo 7
-              across multiple hospitals, including designing network topology,
-              configuring serial and Ethernet communication, conducting user
-              meetings, and providing training. Additionally contributed to
-              sales efforts through participation in booth events, market
-              research, and tender activities.
-            </p>
-            <p>My Achievements:</p>
-            <ul class="pachievement">
-              <li>
-                Project-in-Charge (PIC) for LIS deployment at RSU Royal Prima.
-              </li>
-              <li>Successfully implemented BC-Robo 7 at RSUD Kariadi.</li>
-              <li>Helped to sold a BC-Robo 7 unit</li>
-            </ul>
-          </li>
-          <li class="dot-line">
-            <span>></span>
-            <p class="phead">iFORCOM Co., Ltd.</p>
-            <p class="pdate">Augustus 2021 - October 2021</p>
-            <p class="prole">IT Specialist</p>
-            <p class="pdesc">
-              Conducted marketing research by contacting and interviewing
-              several companies in Indonesia, concluding that the products
-              required improvements to better fit the local market.
-            </p>
-            <p>My Achievements:</p>
-            <ul class="pachievement">
-              <li>
-                Presented the ideas of possible improvement to the head of
-                iForcom’s department of Innovation and Technology in full
-                Japanese.
-              </li>
-              <li>
-                Managed to match iForcom with PT. Tiga Pilar and led meetings
-                for collaborations.
-              </li>
-            </ul>
-          </li>
-          <li class="dot-line">
-            <span>></span>
-            <p class="phead">Universitas Indonesia</p>
-            <p class="pdate">June 2016 - February 2021</p>
-            <p class="prole">Elctrical Engineering</p>
-            <ul class="pachievement">
-              <li>
-                Bachelor of Electrical Engineering, Control Systems Engineering
-                Concentration
-              </li>
-              <li>
-                Final Project: “Analysis of the effect of deep learning
-                parameter values at tremor suppressor watch for Parkinson’s
-                Disease
-              </li>
-              <li>
-                Organisation activities: Robotic Team of Universitas Indonesia,
-                Student Union.
-              </li>
-              <li>Graduated with GPA 3.22 out of 4.00.</li>
-            </ul>
-          </li>
-        </ul>
+
+      <div class="code-input-container" style="align-items: center">
+        <p>
+          Write a complete C program that prints "Hello, World!" to the screen:
+        </p>
+        <p>psst. just write:</p>
+        <pre style="text-align: left; margin: auto; width: fit-content"><code>
+        #include &lt;stdio.h&gt;
+        
+        int main() {
+          printf("Hello, World!\n");
+          return 0;
+        }
+        </code></pre>
+        <textarea
+          id="code-input"
+          rows="10"
+          cols="60"
+          placeholder="// Your code here..."
+          style="width: 500px"
+          class="terminal-screen"
+        ></textarea>
+        <br />
+        <button id="check-code-btn">Check My Code</button>
+        <p id="code-feedback"></p>
       </div>
     </section>
 
