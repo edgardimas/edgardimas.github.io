@@ -147,3 +147,57 @@ const navItems = document.getElementById("nav-items");
 toggleBtn.addEventListener("click", () => {
   navItems.classList.toggle("show");
 });
+
+window.addEventListener("scroll", () => {
+  const landing = document.getElementById("landing");
+  const header = document.querySelector("header");
+  const landingHeight = landing.offsetHeight;
+
+  if (window.scrollY < landingHeight) {
+    header.classList.add("hidden");
+  } else {
+    header.classList.remove("hidden");
+  }
+});
+
+const countdownText = document.getElementById("countdown-text");
+const skipBtn = document.getElementById("skip-btn");
+const messages = [
+  "Commencing Journey in ... 3",
+  "Commencing Journey in ... 2",
+  "Commencing Journey in ... 1",
+  "We have a lift off",
+];
+
+let index = 0;
+let interval;
+
+// Lock scroll initially
+document.body.classList.add("noscroll");
+
+function startCountdown() {
+  interval = setInterval(() => {
+    countdownText.textContent = messages[index];
+    index++;
+
+    if (index === messages.length) {
+      clearInterval(interval);
+      finishIntro();
+    }
+  }, 1000);
+}
+
+function finishIntro() {
+  document.body.classList.remove("noscroll");
+  const nextSection = document.getElementById("about");
+  nextSection.scrollIntoView({ behavior: "smooth" });
+}
+
+// Start countdown
+startCountdown();
+
+// Handle skip
+skipBtn.addEventListener("click", () => {
+  clearInterval(interval); // stop countdown
+  finishIntro(); // skip to next section
+});

@@ -1,14 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
-@import "./navbar.css";
+@import "./header.css";
 @import "./about.css";
 @import "./journey.css";
 @import "./projects.css";
 @import "./terminal.css";
 @import "./contact.css";
 @import "./modal.css";
+@import "./landing.css";
 
 html {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body.noscroll {
+  overflow: hidden;
 }
 
 body {
@@ -27,7 +34,7 @@ section {
   border-radius: 25px;
   padding: 40px;
   text-align: center;
-  scroll-margin-top: 80px;
+  scroll-margin-top: 130px;
 }
 
 .horizontal-line {
