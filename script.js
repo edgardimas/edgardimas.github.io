@@ -103,30 +103,31 @@ const messages = [
 let index = 0;
 let interval;
 
-function startCountdown() {
-  interval = setInterval(() => {
-    countdownText.textContent = messages[index];
-    index++;
+// function startCountdown() {
+//   interval = setInterval(() => {
+//     countdownText.textContent = messages[index];
+//     index++;
 
-    if (index === messages.length) {
-      clearInterval(interval);
-      finishIntro();
-    }
-  }, 1000);
-}
+//     if (index === messages.length) {
+//       clearInterval(interval);
+//       finishIntro();
+//     }
+//   }, 1000);
+// }
 
-function finishIntro() {
-  const nextSection = document.getElementById("welcome");
-  nextSection.scrollIntoView({ behavior: "smooth" });
-}
+// function finishIntro() {
+//   const nextSection = document.getElementById("welcome");
+//   nextSection.scrollIntoView({ behavior: "smooth" });
+// }
 
-// Start countdown
-startCountdown();
+// // Start countdown
+// startCountdown();
 
 document.addEventListener("DOMContentLoaded", () => {
   const checkBtn = document.getElementById("check-code-btn");
   const codeInput = document.getElementById("code-input");
   const feedback = document.getElementById("code-feedback");
+  const codeOutput = document.getElementById("code-output"); // Output terminal
 
   const correctCode = `#include <stdio.h>
 
@@ -140,12 +141,22 @@ int main() {
     const normalizedUserCode = userCode.replace(/\s+/g, "");
     const normalizedCorrectCode = correctCode.replace(/\s+/g, "");
 
+    // Check if code matches the correct version
     if (normalizedUserCode === normalizedCorrectCode) {
       feedback.textContent = "Great job, cadet! You're ready for the console.";
       feedback.style.color = "green";
     } else {
       feedback.textContent = "Oops! Double-check your syntax and try again.";
       feedback.style.color = "red";
+    }
+
+    // Extract and display the printf content
+    const match = userCode.match(/printf\s*\(\s*"([^"\\]*)/);
+    if (match && match[1]) {
+      const cleanOutput = match[1].replace(/\\n/g, ""); // Remove \n
+      codeOutput.value = match[1];
+    } else {
+      codeOutput.value = "// No valid printf statement found.";
     }
   });
 });

@@ -1,0 +1,25 @@
+-*- Introduction
+- C was not used in the very early days of computing (like in the 1950s and 1960s) to write program such as calculators
+
+1. Early Computers (1950 to 1960s)
+- Machine Code and Assembly Language: in the beginning, programmers wrote instructions directly in machine code (binary)
+- or in assembly language (more human-readable version of machine code)
+- These program are incredibely basic and directly controlled the hardware
+
+2. High-Level Languages (1960s to 1970s)
+- As the first high-level programming lagugages were developed (like Fotran and COBOL), it became easier to write complex programs
+- these languages allowed programmers to express logic in a more readable way, abstracting away the complexities of the hardware
+- Basic was another language that became popular during this time, especially for calcualtors and educational programs.
+
+3. C Language (1972)
+- C was created by Dennis Ritchie in 1972 at Bell Labs. It was designed to be a general-purpose language 
+- and was used to write Unix, one of the earliest operating systems that could manage hardware and software tasks
+- C allowed progrmmers that was portable (i.e. it could run on different machines), unlike assembly languages, which was tied
+  to specific hardware
+
+4. Calulator Programs in the C Era (Late 1970s and beyond)
+- By the time C was widely used (1970s and 1980s) it was indeed used to write programs like calc. suit. for a vari. of reasons
+- c provided a good balance of low level access hardwar and high level hardware making it suitable for a varity of app.
+- early scintific graphiv calcult were either programmmed or usd in embbedded c code. 
+
+Summm. F

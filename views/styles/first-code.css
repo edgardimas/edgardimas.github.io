@@ -20,3 +20,14 @@ button {
   margin-top: 10px;
   font-weight: bold;
 }
+
+.console-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.console-container .terminal-screen {
+  margin: 0;
+}

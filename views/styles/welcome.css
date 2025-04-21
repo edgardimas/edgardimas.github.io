@@ -7,11 +7,10 @@
   align-items: center;
   width: 90%;
   margin: 0 auto;
-  text-align: center;
   gap: 1.25rem;
-  text-align: justify;
 }
 
-.welcome-paragraph {
+.welcome-paragraphs {
   text-align: justify;
+  flex: 1;
 }

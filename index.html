@@ -58,7 +58,7 @@
         <h2 class="section-head">Welcome</h2>
       </div>
       <div class="welcome-container">
-        <div class="welcome-pargraphs">
+        <div class="welcome-paragraphs">
           <h1>Hello, Explorer</h1>
           <p>
             Welcome aboard, fellow explorer! You've just stepped onto the deck
@@ -72,7 +72,7 @@
             engineering.
           </p>
         </div>
-        <div class="welcome-pargraphs">
+        <div class="welcome-paragraphs">
           <h1>-----</h1>
           <p>
             On this voyage, you'll find logs, resources, and systems crafted
@@ -98,6 +98,81 @@
 
     <div class="horizontal-line-2 line-red"></div>
 
+    <section id="why-code" class="section">
+      <div class="section-header">
+        <img src="./views/assets/color.png" alt="color" class="color" />
+        <h2 class="section-head">But.. What is Coding, and Why?</h2>
+      </div>
+      <div class="welcome-container">
+        <div class="welcome-paragraphs">
+          <h1>What is to Code?</h1>
+          <p>
+            <strong>
+              To code is to write a set of instructions that a computer can
+              understand and execute.</strong
+            >
+            These instructions, known as programs or scripts, are written using
+            programming languages like Python, JavaScript, or C++. Coding allows
+            us to create software applications, websites, games, and control
+            hardware systems.
+            <strong>
+              It is a processes of translating human ideas and logic that
+              machines can process </strong
+            >to perform specific tasks efficiently and repatedly.
+          </p>
+          <p>
+            Coding is like learning to talk to machines — not with words, but
+            with logic, loops, and a little bit of patience. It's your way of
+            saying, “Hey computer, do this… and now do it better.” Whether
+            you're automating a simple task or building something amazing from
+            scratch, coding is how you give ideas a voice.
+            <strong
+              >Every line you write becomes a message that turns thoughts into
+              real, functioning digital tools</strong
+            >
+          </p>
+        </div>
+        <div class="welcome-paragraphs">
+          <h1>Why would I learn to Code?</h1>
+          <p>
+            <strong
+              >Coding empowers individuals (you) to build things that solve
+              real-world problems</strong
+            >
+            (Like this website, to help you to code!). it gives you the ability
+            to create tools that automate tasks, analyze data, connect people,
+            and improve lives. In today's digtial age, knowing how to code opens
+            doors to countless opportunities in tech and beyond. Whether you're
+            working win healthcare, finance, educationm or entertainment, coding
+            is
+            <strong
+              >a powerful skill that can help you contribute meaningfully and
+              make a difference.</strong
+            >
+          </p>
+          <p>
+            Beyond the practical benefits, coding also fosters critical
+            thinking, creativity, and resilience. It teaches you how to break
+            problems into smaller parts, test hypotheses, and learn from
+            failure. People code not just to earn a living, but to experiment,
+            <strong
+              >to express their ideas, and to build things they believe in
+              technology-driven world.</strong
+            >
+          </p>
+        </div>
+        <img
+          src="./views/assets/rover.png"
+          class="astronaut-img"
+          alt="A Mars rover illustration"
+          style="margin-left: 20px"
+        />
+        <!-- Image credit: https://www.pinterest.com/pin/3025924745500198/ -->
+      </div>
+    </section>
+
+    <div class="horizontal-line-2 line-orange"></div>
+
     <section id="first-code" class="section">
       <div class="section-header">
         <img src="./views/assets/color.png" alt="color" class="color" />
@@ -106,10 +181,25 @@
 
       <div class="code-input-container" style="align-items: center">
         <p>
+          So, the next question will be "How can I code?", Luckily I've prepared
+          a Terminal for you!
+        </p>
+        <p>
           Write a complete C program that prints "Hello, World!" to the screen:
         </p>
-        <p>psst. just write:</p>
-        <pre style="text-align: left; margin: auto; width: fit-content"><code>
+        <p>just write as shown as the box below:</p>
+        <pre
+          style="
+            text-align: left;
+            margin: auto;
+            width: fit-content;
+            padding-right: 50px;
+            border-style: solid;
+            font-size: 16px;
+            background: white;
+            margin-bottom: 20px;
+          "
+        ><code>
         #include &lt;stdio.h&gt;
         
         int main() {
@@ -117,22 +207,32 @@
           return 0;
         }
         </code></pre>
-        <textarea
-          id="code-input"
-          rows="10"
-          cols="60"
-          placeholder="// Your code here..."
-          style="width: 500px"
-          class="terminal-screen"
-        ></textarea>
+        <div class="console-container">
+          <textarea
+            id="code-input"
+            rows="10"
+            cols="60"
+            placeholder="// Your code here..."
+            style="width: 500px"
+            class="terminal-screen input"
+          ></textarea>
+          <textarea
+            id="code-output"
+            rows="10"
+            cols="60"
+            placeholder="// This will be your output"
+            style="width: 500px"
+            class="terminal-screen output"
+            readonly
+          ></textarea>
+        </div>
+
         <br />
         <button id="check-code-btn">Check My Code</button>
         <p id="code-feedback"></p>
       </div>
     </section>
 
-    <div class="horizontal-line-2 line-orange"></div>
-
-    <script type="module" src="./scripts/script.js"></script>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>
