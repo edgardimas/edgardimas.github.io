@@ -1,0 +1,23 @@
+Software Developer vs. Softare Engineer vs. Computer Engineer
+Confused about the differences? Here's a quick guide to help you understand
+
+--> Software Developer:
+Focus: Writing Code and Building applications
+Key Skills: Front-End, back-end, app development, and user interfaces.
+Woek: Build Software products, focus on features and user experience.
+Self-Taught? yes, many start through online resources and bootcamps
+
+ --> Software Engineer
+ Focus: Designing and optimizing complex systems.
+ Key Skills: System architecture, algorithms, Machine Learning, AI, Scalability.
+ Work: Plan, design, and implement entire systems; solve problems at a large scale, 
+ Self-Tauhgt? More Difficult, requires some sort of formal education or experience in large scale design
+
+ --> Computer Engineer
+ Focus: Combining hardware and software to design systems.
+ Key Skills: Robotics, IoT, embedded systems, microcontrollers.
+ Work: Work on the hardware that powers devices and machines. 
+ Self-Taught? Requires formal education in Computer Engineering or Electrical Engineering.
+ People often mixup these things. 
+
+

@@ -9,6 +9,7 @@
 @import "./landing.css";
 @import "./welcome.css";
 @import "./first-code.css";
+@import "./library.css";
 
 html {
   scroll-behavior: smooth;

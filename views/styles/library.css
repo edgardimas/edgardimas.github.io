@@ -1,0 +1,42 @@
+.code-codex-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: rgb(238, 238, 238);
+}
+
+.scroll-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  gap: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.scroll-card:hover {
+  transform: translateY(-4px);
+}
+
+.scroll-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.scroll-title {
+  font-family: "Avant Garde", sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.scroll-paragraph {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+  text-align: justify;
+}
