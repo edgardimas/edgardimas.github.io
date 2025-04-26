@@ -24,7 +24,7 @@ to think clearly, solve problems methodically, and write software that others ca
 C is the legendary low-level language that brought modern computing into existence. Developed in the early 1970s, it serves as 
 the foundation of many operating systems (including Unix and Linux), compilers, and embedded systems. 
 With direct memory access, pointer arithmetic, and minimal abstraction, C gives you full control over how your programs
-interact with hardware -- like pilot manually navigating a starship through asteroid fields.
+interact with hardware 
 
 Learning C teaches you what's really happening behind the curtain: how memory is managedm how computers think, and how performance 
 is maximized. It's unforgiving but powerful -- and many modern languages owe their syntax 

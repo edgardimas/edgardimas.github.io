@@ -1,0 +1,44 @@
+1. Typing in terminal
+when you type in a terminal (like Bash, Zsh, or a serial terminal);
+- your keystroke generates an interrupt via the keyboard controller.
+- This interrupt is handled by the OS (through an interrupt handler).
+- The input gets buffered and interpreted by the terminal emulator (e.g., GNOME Terminal, PuTTY, or Serial monitor in arduino IDE).
+- if you're using a serial terminal (like communicating with a microcontroller), it converts your input into serial data
+  (UART, USB, SPI, I2C, etc.)
+
+2. Sending Signal to a Microcontroller.
+- The terminal app sends the data via a serial driver (e.g., /dev/ttyUSB0 in Linux)
+- That data gets turned into a voltage signal using UART (usually 3.3V or 5V logic levels.)
+- the Microcontroller's UART peripheral recieves these electrical signals and decodes them into bytes. 
+
+3. Inside the Microcontroller. 
+Once the microcontroller gets the signal 
+- the bytes might trigger an interrupt service routine (ISR) or be polled from a buffer.
+- It might then process that data (e.g., turn on LED, send back sensor readings).
+- The program is often stored in flash memory, and variables/data are handled in RAM.
+- The microcontroller uses its CPU core (e.g., ARM Cortex-M) to execute instructions based on received commands.
+
+4. The Motherboard and RAM (PC side)
+Back in your PC 
+- the terminal runs on an application layer above the OS (Linux, Windows, etc.)
+- Every Input/output is managed by drivers talking to the OS Kernel.
+- The kernel interacts with hardware using buses like PCIe, USB, or Serial, often managed via chipset on the motherboard.
+- The code you run in the terminal lives in RAM, and CPU instructions are fetched from there too. 
+- If you're using a USB-toserial converted, the signal path is: terminal app -> OS driver -> USB stack -> USB controller chip 
+  on motherboard 
+- The code you run in the terminal lives in RAN, and CPU instructions are fetched from there too.
+- If you're using a USB-to-serial converter, the signal path is: terminal app -> OS driver -> USB Stack -> 
+  USB controller chip on motherboard -> USB bus -> USB-serial chip -> UART to MCU. 
+
+5. Example Flow
+- IF you are typing "A" in your terminal to turn n a motor:
+- You type "A" -> gets converted to ASCII 0x41
+- OS sends that byte via serial port. 
+- Microcontroller receives 0x41 on its UART.
+- ISR triggers: if (received == 'A') motor_on()
+- Microcontroller sets a GPIO pin HIGH -> motor driver -> motor turns on. 
+
+
+
+
+

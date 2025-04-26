@@ -1,0 +1,64 @@
+1. Typing the code 
+You use a text editor (e.g., VSCode, nano, vim) to write the C code. 
+- Your keyboard sends scan codes via the USB Interface -> OS interprets them -> your editor puts characters on screen.
+- Your file gets saved to disk (e.g., hello.c)
+
+2. Compilation process
+You run:
+ - gcc hello.c -o hello
+
+a. Preprocessing (#include)
+- the include <stdio.h> line gets expanded. The compiler pastes in the contents of the stdio.h header, which contains declaration for printf among others.
+ which contains declarations for printf among others.
+-
+b. Compilation
+- Your C code gets translated into assembly for your machine (e.g., x86_64 or ARM).
+
+c. Assembly
+- That assembly is turned into machine code (binary instructions for your CPU)
+
+d. Linking
+- The machine code for printf isn't in your file, it's in a library (like libc). The linker pulls in the 
+required code from that library and joins everything into a single binary: hello. 
+
+3. Running the executable
+now you run:
+./hello
+
+Here's what happens:
+a. Shell interprets the command. 
+- Bash or zsh recognizes ./hello and asks the OS to load and run the file. 
+
+b. OS Loads the Program
+- The OS loader allocates memory (RAM) for your program
+- It loads your machine code into RAM. 
+- it sets up the stack, heap, and instruciton pointer to main().
+
+4. Execution Begins. 
+The CPU starts executing instructions from your main() function. 
+
+5. Calling printf("Hello, World!\n")
+a. Function Call
+When the CPU hits printf, it performs a function call to the code inside the C Standard Library.
+
+b. Formatted String Handling
+printf parses your format string ("Hello, World!\n"), identifies no format specifiers, and prepares to send it as-is.
+
+c. Writing to Output Buffer
+printf writes the string to stdout, which is typically connected to your terminal (e.g., /dev/pts/0 in Linux).
+
+d. Syscall to Kernel
+Eventually, printf uses a system call like write():
+
+write(1, "Hello, World!\n", 14);
+Where 1 is the file descriptor for stdout.
+
+6. From Kernel to terminal 
+- The kernel receives the write() syscall.
+- It checks where stdout is pointed (usually your terminal device).
+- It sends the data through the terminal emulator (like GNOME Terminal, Windows Command Prompt, or evena  URAT over USB)
+- The terminal takse the characters and renders them on screen. 
+
+7. GPU/ screen rendering
+- the terminal emulator uses GPU or CPU to raw the characters on your monitor. 
+- "Hello, World!" finally appears. 
