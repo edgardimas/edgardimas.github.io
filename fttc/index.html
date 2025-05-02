@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ed's Explorer Log</title>
     <link rel="stylesheet" href="../views/styles/style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
@@ -51,10 +52,21 @@
     <nav class="section-nav">
       <ul class="section-nav-li-container">
         <li><a href="#transistor" class="section-link">Transistor</a></li>
-        <li><a href="#ram" class="section-link">RAM</a></li>
+        <li><a href="#logic-gates" class="section-link">Logic Gates</a></li>
+        <li>
+          <a href="#combinational-circuit" class="section-link"
+            >Combinational Circuit</a
+          >
+        </li>
+        <li>
+          <a href="#register-memory" class="section-link">Register & Memory</a>
+        </li>
         <li><a href="#alu" class="section-link">ALU</a></li>
-        <li><a href="#register" class="section-link">Register</a></li>
-        <li><a href="#cpu" class="section-link">CPU</a></li>
+        <li>
+          <a href="#cpu-control-logic" class="section-link"
+            >CPU & Control Logic</a
+          >
+        </li>
       </ul>
     </nav>
     <style>
@@ -65,12 +77,69 @@
 
     <!-- Sections -->
     <section id="transistor">
-      <h2>1. Transistor</h2>
-      <p>
-        The transistor is the building block of all modern electronic devices.
-        It functions as a switch or amplifier and is used to control the flow of
-        electrical signals.
-      </p>
+      <div class="section-header">
+        <img src="../views/assets/color.png" alt="color" class="color" />
+        <h2 class="section-head">Transistor</h2>
+      </div>
+      <div class="p-container-fttc">
+        <div>
+          <img
+            src="./assets/transistor.png"
+            style="
+              width: 200px;
+              margin-top: 20px;
+              margin-right: 20px;
+              border-width: 1px;
+              border-color: black;
+              border-style: solid;
+              float: left;
+            "
+          />
+          <p>
+            The transistor is the building block of all modern electronic
+            devices. It functions as a switch or amplifier and is used to
+            control the flow of electrical signals. At the core of modern
+            electronics, from your smartphone to high-performance computers,
+            lies the transistor — a tiny switch with enormous power.But how does
+            it "know" what to do, and how is it able to control the flow of
+            electricity with such precision? The answer lies in its ability to
+            control electrical current through the properties of semiconductors.
+            The Semiconductor Secret The transistor is made of a material called
+            semiconductor, typically silicon.
+          </p>
+
+          <p>
+            Unlike conductors like copper or insulators like rubber,
+            semiconductors have electrical properties that can be manipulated by
+            the introduction of impurities — a process known as doping. This
+            means that the transistor can switch between conducting and
+            insulating states depending on the voltage applied to it. This
+            ability to control current flow is what makes the transistor so
+            powerful. The Structure: Three Layers of Control A typical bipolar
+            junction transistor (BJT) consists of three layers: the emitter, the
+            base, and the collector.
+          </p>
+        </div>
+        <div>
+          <p>
+            These layers are each made of different types of semiconductor
+            material, either n-type (negative) or p-type (positive). The
+            arrangement of these materials is crucial for controlling the flow
+            of electricity. Emitter: This is where current enters the
+            transistor. Base: A very thin layer of semiconductor material that
+            controls the current flowing from the emitter to the collector.
+            Collector: The region where current exits the transistor. How It
+            Works Think of the transistor as a valve that regulates the flow of
+            current.
+          </p>
+          <p>If you are curious:</p>
+          <div style="display: flex; justify-content: center">
+            <button>But What is semiconductor?</button>
+            <button>But How does a transistor Work?</button>
+            <button>Can I make one?</button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="ram">
