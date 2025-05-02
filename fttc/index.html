@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ed's Explorer Log</title>
+    <link rel="stylesheet" href="../views/styles/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-flex">
+        <div class="logo-brand">
+          <div class="header-logo">
+            <img src="../views/assets/machine.png" alt="logo" />
+          </div>
+          <div class="header-brand">
+            <h1 class="main-brand">Ed's Explorer Log</h1>
+            <p class="tagline">Exploring the universe through code</p>
+          </div>
+        </div>
+
+        <div class="nav-wrapper">
+          <button class="menu-toggle" id="menu-toggle">☰</button>
+          <nav>
+            <ul class="nav-container" id="nav-items">
+              <li><a href="/#welcome">Home</a></li>
+              <li>
+                <a href="/fttc" style="text-decoration: underline"
+                  >Transistor to Computer</a
+                >
+              </li>
+              <li>
+                <a href="/library">Library</a>
+              </li>
+              <li><a href="/quiz">Quiz</a></li>
+              <li><a href="/author">Author</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="flex-line">
+        <div class="horizontal-line line-red"></div>
+        <div class="horizontal-line line-orange"></div>
+        <div class="horizontal-line line-teal"></div>
+      </div>
+    </header>
+
+    <!-- Sticky Secondary Header -->
+    <nav class="section-nav">
+      <ul class="section-nav-li-container">
+        <li><a href="#transistor" class="section-link">Transistor</a></li>
+        <li><a href="#ram" class="section-link">RAM</a></li>
+        <li><a href="#alu" class="section-link">ALU</a></li>
+        <li><a href="#register" class="section-link">Register</a></li>
+        <li><a href="#cpu" class="section-link">CPU</a></li>
+      </ul>
+    </nav>
+    <style>
+      html {
+        scroll-padding-top: 100px;
+      }
+    </style>
+
+    <!-- Sections -->
+    <section id="transistor">
+      <h2>1. Transistor</h2>
+      <p>
+        The transistor is the building block of all modern electronic devices.
+        It functions as a switch or amplifier and is used to control the flow of
+        electrical signals.
+      </p>
+    </section>
+
+    <section id="ram">
+      <h2>2. RAM (Random Access Memory)</h2>
+      <p>
+        RAM stores data that is currently being used or processed. It is fast,
+        volatile memory that helps programs run efficiently.
+      </p>
+    </section>
+
+    <section id="alu">
+      <h2>3. ALU (Arithmetic Logic Unit)</h2>
+      <p>
+        The ALU is responsible for performing arithmetic and logical operations.
+        It is a core component of the CPU.
+      </p>
+    </section>
+
+    <section id="register">
+      <h2>4. Register</h2>
+      <p>
+        Registers are small, fast memory units inside the CPU used to store
+        intermediate results and instructions during execution.
+      </p>
+    </section>
+
+    <section id="cpu">
+      <h2>5. CPU (Central Processing Unit)</h2>
+      <p>
+        The CPU is the brain of the computer. It fetches, decodes, and executes
+        instructions using the ALU, registers, and control unit.
+      </p>
+    </section>
+
+    <section id="machine-code">
+      <h2>6. Machine Code</h2>
+      <p>
+        Machine code is the lowest-level programming language, consisting of
+        binary instructions directly understood by the CPU.
+      </p>
+    </section>
+
+    <section id="assembly">
+      <h2>7. Assembly Language</h2>
+      <p>
+        Assembly language is a human-readable representation of machine code,
+        using mnemonics to represent instructions.
+      </p>
+    </section>
+
+    <section id="os">
+      <h2>8. Operating System</h2>
+      <p>
+        The operating system manages hardware resources and provides a platform
+        for software to run. It bridges users, programs, and the computer
+        hardware.
+      </p>
+    </section>
+
+    <section id="programming">
+      <h2>9. Programming</h2>
+      <p>
+        Programming allows humans to instruct computers using higher-level
+        languages like Python, C, or Java, which are eventually translated into
+        machine code.
+      </p>
+    </section>
+
+    <section id="application">
+      <h2>10. Application</h2>
+      <p>
+        Applications are software tools designed for users to perform specific
+        tasks, like browsing the web, editing text, or playing music, all made
+        possible by layers beneath.
+      </p>
+    </section>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
