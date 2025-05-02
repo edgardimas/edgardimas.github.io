@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>LIS Quiz</title>
+    <style>
+      .topic-card {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 10px;
+        display: inline-block;
+        cursor: pointer;
+        width: 200px;
+        text-align: center;
+        border-radius: 8px;
+        background: #f8f8f8;
+      }
+      .hidden {
+        display: none;
+      }
+      button {
+        margin: 5px;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Select a Topic</h1>
+    <div id="topics-container"></div>
+
+    <div id="quiz-container" class="hidden">
+      <h2 id="quiz-title"></h2>
+      <p id="question-text"></p>
+      <div id="options-container"></div>
+    </div>
+
+    <div id="final-score" class="hidden"></div>
+
+    <script>
+      const topicFiles = [
+        "electrical_engineering.json",
+        "network_engineering.json",
+        "software_engineering.json",
+        "computer_engineering.json",
+      ];
+
+      const topicTitles = [
+        "Electrical Engineering",
+        "Network Engineering",
+        "Software Engineering",
+        "Computer Engineering",
+      ];
+
+      const topicsContainer = document.getElementById("topics-container");
+      const quizContainer = document.getElementById("quiz-container");
+      const quizTitle = document.getElementById("quiz-title");
+      const questionText = document.getElementById("question-text");
+      const optionsContainer = document.getElementById("options-container");
+      const finalScore = document.getElementById("final-score");
+
+      let questions = [];
+      let currentQuestionIndex = 0;
+      let score = 0;
+
+      topicFiles.forEach((file, index) => {
+        const card = document.createElement("div");
+        card.className = "topic-card";
+        card.textContent = topicTitles[index];
+        card.onclick = () => loadTopic(file, topicTitles[index]);
+        topicsContainer.appendChild(card);
+      });
+
+      function loadTopic(file, title) {
+        fetch(file)
+          .then((response) => response.json())
+          .then((data) => {
+            questions = data;
+            currentQuestionIndex = 0;
+            score = 0;
+            topicsContainer.classList.add("hidden");
+            quizContainer.classList.remove("hidden");
+            finalScore.classList.add("hidden");
+            loadQuestion(title);
+          });
+      }
+
+      function loadQuestion(title) {
+        if (currentQuestionIndex < questions.length) {
+          const question = questions[currentQuestionIndex];
+          quizTitle.textContent = `${title} (${currentQuestionIndex + 1}/${
+            questions.length
+          })`;
+          questionText.textContent = question.q;
+          optionsContainer.innerHTML = "";
+
+          question.o.forEach((option) => {
+            const btn = document.createElement("button");
+            btn.textContent = option;
+            btn.onclick = () => selectAnswer(option, question.a, title);
+            optionsContainer.appendChild(btn);
+          });
+        } else {
+          showFinalScore(title);
+        }
+      }
+
+      function selectAnswer(selected, correctAnswer, title) {
+        if (selected === correctAnswer) {
+          score++;
+        }
+        currentQuestionIndex++;
+        loadQuestion(title);
+      }
+
+      function showFinalScore(title) {
+        quizContainer.classList.add("hidden");
+        finalScore.classList.remove("hidden");
+        finalScore.innerHTML = `
+    <h2>Quiz Completed!</h2>
+    <p><strong>${title}</strong> Score: ${score} / ${questions.length}</p>
+    <button onclick="restart()">Back to Topics</button>
+  `;
+      }
+
+      function restart() {
+        topicsContainer.classList.remove("hidden");
+        quizContainer.classList.add("hidden");
+        finalScore.classList.add("hidden");
+      }
+    </script>
+  </body>
+</html>

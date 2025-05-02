@@ -1,0 +1,102 @@
+[
+  {
+    "q": "Which device prevents electrical overload in a lab circuit?",
+    "o": [
+      "Resistor",
+      "Fuse",
+      "Capacitor",
+      "Relay"
+    ],
+    "a": "Fuse"
+  },
+  {
+    "q": "Which tool is used to measure voltage?",
+    "o": [
+      "Ammeter",
+      "Multimeter",
+      "Voltmeter",
+      "Ohmmeter"
+    ],
+    "a": "Voltmeter"
+  },
+  {
+    "q": "A UPS is primarily used to:",
+    "o": [
+      "Boost internet",
+      "Provide backup power",
+      "Convert voltage",
+      "Filter signals"
+    ],
+    "a": "Provide backup power"
+  },
+  {
+    "q": "Which component stores electrical energy?",
+    "o": [
+      "Diode",
+      "Inductor",
+      "Capacitor",
+      "Switch"
+    ],
+    "a": "Capacitor"
+  },
+  {
+    "q": "Grounding in labs helps to:",
+    "o": [
+      "Prevent electric shock",
+      "Increase power",
+      "Reduce EMF",
+      "Amplify signal"
+    ],
+    "a": "Prevent electric shock"
+  },
+  {
+    "q": "The standard voltage supply in most labs is:",
+    "o": [
+      "110V",
+      "220V",
+      "440V",
+      "12V"
+    ],
+    "a": "220V"
+  },
+  {
+    "q": "Which device regulates voltage automatically?",
+    "o": [
+      "Stabilizer",
+      "Breaker",
+      "Inverter",
+      "Condenser"
+    ],
+    "a": "Stabilizer"
+  },
+  {
+    "q": "A short circuit is caused when:",
+    "o": [
+      "Low resistance bypasses load",
+      "Too many devices used",
+      "Two phases touch",
+      "Wires are too long"
+    ],
+    "a": "Low resistance bypasses load"
+  },
+  {
+    "q": "An oscilloscope is used to view:",
+    "o": [
+      "Resistance",
+      "Voltage",
+      "Current",
+      "Waveforms"
+    ],
+    "a": "Waveforms"
+  },
+  {
+    "q": "A relay is used for:",
+    "o": [
+      "Remote switching",
+      "Signal filtering",
+      "Amplifying sound",
+      "Measuring current"
+    ],
+    "a": "Remote switching"
+  }
+]

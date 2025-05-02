@@ -1,0 +1,102 @@
+[
+  {
+    "q": "Which language is commonly used in LIS backend?",
+    "o": [
+      "Python",
+      "Ruby",
+      "PHP",
+      "Java"
+    ],
+    "a": "Java"
+  },
+  {
+    "q": "Unit testing is for:",
+    "o": [
+      "Integration",
+      "Database",
+      "UI",
+      "Individual functions"
+    ],
+    "a": "Individual functions"
+  },
+  {
+    "q": "REST API uses which protocol?",
+    "o": [
+      "TCP",
+      "FTP",
+      "HTTP",
+      "UDP"
+    ],
+    "a": "HTTP"
+  },
+  {
+    "q": "Which database is widely used in LIS?",
+    "o": [
+      "PostgreSQL",
+      "Oracle",
+      "SQLite",
+      "MongoDB"
+    ],
+    "a": "Oracle"
+  },
+  {
+    "q": "Version control is done with:",
+    "o": [
+      "Git",
+      "HTTP",
+      "TCP",
+      "ZIP"
+    ],
+    "a": "Git"
+  },
+  {
+    "q": "Agile methodology emphasizes:",
+    "o": [
+      "Strict plans",
+      "Customer collaboration",
+      "Documentation",
+      "Waterfall"
+    ],
+    "a": "Customer collaboration"
+  },
+  {
+    "q": "What is CI/CD?",
+    "o": [
+      "Interface system",
+      "DevOps pipeline",
+      "Backend process",
+      "Database sync"
+    ],
+    "a": "DevOps pipeline"
+  },
+  {
+    "q": "What does 'null' mean in code?",
+    "o": [
+      "Zero",
+      "Empty string",
+      "No value",
+      "False"
+    ],
+    "a": "No value"
+  },
+  {
+    "q": "Frontend frameworks include:",
+    "o": [
+      "React",
+      "Spring",
+      "Flask",
+      "Django"
+    ],
+    "a": "React"
+  },
+  {
+    "q": "ORM helps with:",
+    "o": [
+      "UI design",
+      "Database queries",
+      "API calls",
+      "Networking"
+    ],
+    "a": "Database queries"
+  }
+]

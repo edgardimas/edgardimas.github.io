@@ -1,0 +1,102 @@
+[
+  {
+    "q": "What does LIS stand for?",
+    "o": [
+      "Lab Interface Software",
+      "Laboratory Information System",
+      "Logical Input System",
+      "Local Intranet Solution"
+    ],
+    "a": "Laboratory Information System"
+  },
+  {
+    "q": "Which layer in OSI model handles data transmission?",
+    "o": [
+      "Application",
+      "Transport",
+      "Data Link",
+      "Network"
+    ],
+    "a": "Transport"
+  },
+  {
+    "q": "A switch operates at which OSI layer?",
+    "o": [
+      "Network",
+      "Data Link",
+      "Transport",
+      "Session"
+    ],
+    "a": "Data Link"
+  },
+  {
+    "q": "What is the role of a router?",
+    "o": [
+      "Amplify signal",
+      "Route packets between networks",
+      "Generate IP",
+      "Filter noise"
+    ],
+    "a": "Route packets between networks"
+  },
+  {
+    "q": "What IP class is 192.168.1.1?",
+    "o": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "a": "C"
+  },
+  {
+    "q": "Which protocol is used for secure remote access?",
+    "o": [
+      "FTP",
+      "Telnet",
+      "SSH",
+      "HTTP"
+    ],
+    "a": "SSH"
+  },
+  {
+    "q": "Firewall is used to:",
+    "o": [
+      "Improve internet speed",
+      "Block unauthorized access",
+      "Boost voltage",
+      "Detect errors"
+    ],
+    "a": "Block unauthorized access"
+  },
+  {
+    "q": "Ping command is used for:",
+    "o": [
+      "Speed test",
+      "Network testing",
+      "Hacking",
+      "Load balancing"
+    ],
+    "a": "Network testing"
+  },
+  {
+    "q": "Which tool checks network traffic?",
+    "o": [
+      "Wireshark",
+      "Nmap",
+      "Putty",
+      "Netcat"
+    ],
+    "a": "Wireshark"
+  },
+  {
+    "q": "DNS translates:",
+    "o": [
+      "IP to MAC",
+      "MAC to IP",
+      "Domain to IP",
+      "MAC to Domain"
+    ],
+    "a": "Domain to IP"
+  }
+]

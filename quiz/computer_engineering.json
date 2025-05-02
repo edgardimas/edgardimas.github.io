@@ -1,0 +1,102 @@
+[
+  {
+    "q": "CPU stands for:",
+    "o": [
+      "Central Processing Unit",
+      "Control Processor Unit",
+      "Computer Primary Unit",
+      "Core Process Unit"
+    ],
+    "a": "Central Processing Unit"
+  },
+  {
+    "q": "RAM is:",
+    "o": [
+      "Permanent",
+      "Volatile",
+      "Storage",
+      "Optical"
+    ],
+    "a": "Volatile"
+  },
+  {
+    "q": "SSD is faster than:",
+    "o": [
+      "RAM",
+      "USB",
+      "HDD",
+      "CPU"
+    ],
+    "a": "HDD"
+  },
+  {
+    "q": "BIOS is stored in:",
+    "o": [
+      "RAM",
+      "HDD",
+      "ROM",
+      "GPU"
+    ],
+    "a": "ROM"
+  },
+  {
+    "q": "GPU is mainly used for:",
+    "o": [
+      "Networking",
+      "Graphics",
+      "Calculations",
+      "RAM"
+    ],
+    "a": "Graphics"
+  },
+  {
+    "q": "Which bus connects CPU and memory?",
+    "o": [
+      "Data bus",
+      "Control bus",
+      "Address bus",
+      "Power bus"
+    ],
+    "a": "Address bus"
+  },
+  {
+    "q": "What is POST?",
+    "o": [
+      "Power On Self Test",
+      "Peripheral Output",
+      "Processor Optimization",
+      "Parallel Output"
+    ],
+    "a": "Power On Self Test"
+  },
+  {
+    "q": "Which port is used for monitors?",
+    "o": [
+      "HDMI",
+      "USB",
+      "Ethernet",
+      "VGA"
+    ],
+    "a": "HDMI"
+  },
+  {
+    "q": "Which component holds BIOS?",
+    "o": [
+      "RAM",
+      "ROM",
+      "SSD",
+      "HDD"
+    ],
+    "a": "ROM"
+  },
+  {
+    "q": "Form factor defines:",
+    "o": [
+      "CPU model",
+      "Motherboard size",
+      "Battery life",
+      "Power supply"
+    ],
+    "a": "Motherboard size"
+  }
+]
