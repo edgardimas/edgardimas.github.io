@@ -82,7 +82,7 @@ toggleBtn.addEventListener("click", () => {
 window.addEventListener("scroll", () => {
   const landing = document.getElementById("landing");
   const header = document.querySelector("header");
-  const landingHeight = landing.offsetHeight;
+  const landingHeight = landing.offsetHeight - 50;
 
   if (window.scrollY < landingHeight) {
     header.classList.add("hidden");

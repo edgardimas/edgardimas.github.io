@@ -32,9 +32,9 @@
                 >
               </li>
               <li>
-                <a href="/library">Library</a>
+                <a href="/programming">Programming</a>
               </li>
-              <li><a href="/quiz">Quiz</a></li>
+              <li><a href="/itcs">ITCS</a></li>
               <li><a href="/author">Author</a></li>
             </ul>
           </nav>
@@ -71,7 +71,7 @@
     </nav>
     <style>
       html {
-        scroll-padding-top: 100px;
+        scroll-padding-top: 30px;
       }
     </style>
 
@@ -83,18 +83,33 @@
       </div>
       <div class="p-container-fttc">
         <div>
-          <img
-            src="./assets/transistor.png"
-            style="
-              width: 200px;
-              margin-top: 20px;
-              margin-right: 20px;
-              border-width: 1px;
-              border-color: black;
-              border-style: solid;
-              float: left;
-            "
-          />
+          <div style="display: flex; flex-direction: column; float: left">
+            <img
+              src="./assets/transistor.png"
+              style="
+                width: 150px;
+                margin-top: 20px;
+                margin-right: 20px;
+                border-width: 1px;
+                border-color: black;
+                border-style: solid;
+                float: left;
+              "
+            />
+            <img
+              src="./assets/bjt.png"
+              style="
+                width: 150px;
+                margin-top: 20px;
+                margin-right: 20px;
+                border-width: 1px;
+                border-color: black;
+                border-style: solid;
+                float: left;
+              "
+            />
+          </div>
+
           <p>
             The transistor is the building block of all modern electronic
             devices. It functions as a switch or amplifier and is used to
@@ -142,20 +157,118 @@
       </div>
     </section>
 
-    <section id="ram">
-      <h2>2. RAM (Random Access Memory)</h2>
-      <p>
-        RAM stores data that is currently being used or processed. It is fast,
-        volatile memory that helps programs run efficiently.
-      </p>
+    <section id="logic-gates">
+      <div class="section-header">
+        <img src="../views/assets/color.png" alt="color" class="color" />
+        <h2 class="section-head">Logic Gates</h2>
+      </div>
+      <div class="p-container-fttc">
+        <div>
+          <img
+            src="./assets/nand-bjt.png"
+            style="
+              width: 300px;
+              margin-top: 20px;
+              margin-right: 20px;
+              border-width: 1px;
+              border-color: black;
+              border-style: solid;
+              float: left;
+            "
+          />
+          <p>
+            So, we've got this amazing thing called a transistor—this tiny
+            switch made from semiconductor material. But when you put a bunch of
+            these switches together in the right way, something truly exciting
+            happens: you can build <strong>logic gates</strong>. Now here's the
+            big idea — logic gates are the building blocks of thinking machines.
+            Yep, your computer, your phone, even your smart toaster — they all
+            “think” using these logic gates.
+          </p>
+
+          <p>
+            A logic gate takes in signals (which are just voltages that mean
+            "yes" or "no") and decides what to do with them. For example,
+            there's the <strong>AND gate</strong> — it only turns on if *both*
+            of its inputs are on. Or the <strong>OR gate </strong>, which turns
+            on if *either* input is on. These gates are just little circuits
+            made of transistors, wired up in clever ways.
+          </p>
+        </div>
+        <div>
+          <p>
+            These layers are each made of different types of semiconductor
+            material, either n-type (negative) or p-type (positive). The
+            arrangement of these materials is crucial for controlling the flow
+            of electricity. Emitter: This is where current enters the
+            transistor. Base: A very thin layer of semiconductor material that
+            controls the current flowing from the emitter to the collector.
+            Collector: The region where current exits the transistor. How It
+            Works Think of the transistor as a valve that regulates the flow of
+            current.
+          </p>
+          <p>If you are curious:</p>
+          <div style="display: flex; justify-content: center">
+            <button>So what *is* a logic gate, really?</button>
+            <button>Can logic gates add numbers?</button>
+            <button>Could I build one myself?</button>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="alu">
-      <h2>3. ALU (Arithmetic Logic Unit)</h2>
-      <p>
-        The ALU is responsible for performing arithmetic and logical operations.
-        It is a core component of the CPU.
-      </p>
+    <section id="combinational-circuit">
+      <div class="section-header">
+        <img src="../views/assets/color.png" alt="color" class="color" />
+        <h2 class="section-head">Combinational Circuit</h2>
+      </div>
+      <div class="p-container-fttc">
+        <div>
+          <img
+            src="./assets/comb-circuit.png"
+            style="
+              width: 300px;
+              margin-top: 20px;
+              margin-right: 20px;
+              border-width: 1px;
+              border-color: black;
+              border-style: solid;
+              float: left;
+            "
+          />
+          <p>
+            A <strong>combinational circuit</strong> is a type of digital
+            circuit where the output is determined solely by the current inputs
+            — there's no memory involved. Unlike sequential circuits that depend
+            on past inputs (via stored state), combinational circuits are like
+            pure logic machines: input goes in, output comes out instantly.
+          </p>
+
+          <p>
+            These circuits are built by combining basic logic gates like AND,
+            OR, and NOT. Examples include <strong>adders</strong>,
+            <strong>multiplexers</strong>, and <strong>encoders</strong>. For
+            instance, a half adder takes two binary digits and outputs their sum
+            and carry. It’s a key building block for arithmetic operations in
+            computers.
+          </p>
+        </div>
+        <div>
+          <p>
+            Designing a combinational circuit involves choosing the right gates
+            and wiring them to get the desired output behavior. You can use
+            tools like truth tables, Karnaugh maps, or Boolean algebra to
+            simplify and optimize them. Once built, these circuits respond
+            immediately to changes in input — no clock needed!
+          </p>
+          <p>If you're curious:</p>
+          <div style="display: flex; justify-content: center">
+            <button>What can combinational circuits do?</button>
+            <button>How do they differ from sequential ones?</button>
+            <button>Can I build one with just logic gates?</button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="register">

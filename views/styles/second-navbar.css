@@ -1,7 +1,7 @@
 /* Sticky secondary header */
 .section-nav {
   position: sticky;
-  top: 120px;
+  top: 119px;
   background-color: black; /* or use your preferred background */
   padding: 1px 1px;
   z-index: 999;
