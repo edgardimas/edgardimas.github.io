@@ -21,3 +21,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("scroll", onScroll);
 });
+
+function toggleDropdown(element) {
+  element.classList.toggle("open");
+  const arrow = element.querySelector(".arrow");
+  arrow.classList.toggle("rotate");
+}

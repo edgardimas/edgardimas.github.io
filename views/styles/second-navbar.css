@@ -9,7 +9,7 @@
 
 .section-nav ul {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   list-style: none;
   margin: -7px auto;
   padding: 0;

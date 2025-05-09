@@ -6,6 +6,59 @@
     <title>Ed's Explorer Log</title>
     <link rel="stylesheet" href="../views/styles/style.css" />
     <link rel="stylesheet" href="./style.css" />
+    <style>
+      .dropdown {
+        cursor: pointer;
+        padding: 10px;
+        background-color: #f0f0f0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        border: 1px solid #ccc;
+        user-select: none;
+      }
+
+      .arrow {
+        transition: transform 0.3s ease;
+      }
+
+      .arrow.rotate {
+        transform: rotate(90deg);
+      }
+
+      .dropdown-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        background-color: #fafafa;
+        border: 1px solid #ccc;
+        border-top: none;
+      }
+
+      .dropdown-content-inner {
+        padding: 0 10px;
+        opacity: 0;
+        transition: padding 0.4s ease, opacity 0.4s ease;
+      }
+
+      .dropdown.open + .dropdown-content {
+        max-height: 200px; /* enough for your content */
+      }
+
+      .dropdown.open + .dropdown-content .dropdown-content-inner {
+        padding: 100px;
+        opacity: 1;
+      }
+
+      .p-container-fttc {
+        background-color: rgb(255, 254, 245);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+      }
+    </style>
   </head>
 
   <body>
@@ -67,6 +120,9 @@
             >CPU & Control Logic</a
           >
         </li>
+        <li>
+          <a href="#computer" class="section-link">Computer</a>
+        </li>
       </ul>
     </nav>
     <style>
@@ -110,7 +166,7 @@
             />
           </div>
 
-          <p>
+          <p style="text-indent: 2em">
             The transistor is the building block of all modern electronic
             devices. It functions as a switch or amplifier and is used to
             control the flow of electrical signals. At the core of modern
@@ -123,7 +179,7 @@
             semiconductor, typically silicon.
           </p>
 
-          <p>
+          <p style="margin-top: 10px">
             Unlike conductors like copper or insulators like rubber,
             semiconductors have electrical properties that can be manipulated by
             the introduction of impurities — a process known as doping. This
@@ -154,6 +210,52 @@
             <button>Can I make one?</button>
           </div>
         </div>
+      </div>
+
+      <div class="dropdown" onclick="toggleDropdown(this)">
+        <span>Header</span>
+        <span class="arrow">&#9654;</span>
+        <!-- Unicode for '>' triangle -->
+      </div>
+      <div class="dropdown-content">
+        <p>
+          Silicon is not fabricated from scratch but rather refined from its
+          natural form—silica, which is abundant in sand and quartz. The process
+          begins by mixing silica with carbon in an electric arc furnace. At
+          temperatures exceeding 2,000°C, the carbon acts as a reducing agent,
+          stripping away oxygen from the silica and yielding a crude form of
+          silicon known as metallurgical-grade silicon. This initial product
+          contains impurities and is subsequently purified through methods such
+          as the Siemens process or chemical vapor deposition, especially when
+          ultra-high purity is required for semiconductor applications. Thus,
+          through a combination of high-temperature reduction and sophisticated
+          refining techniques, silicon is transformed from an intractable,
+          naturally occurring mineral into a vital component for modern
+          electronics and solar technology.
+        </p>
+      </div>
+
+      <div class="dropdown" onclick="toggleDropdown(this)">
+        <span>Header</span>
+        <span class="arrow">&#9654;</span>
+        <!-- Unicode for '>' triangle -->
+      </div>
+      <div class="dropdown-content">
+        <p>
+          Silicon is not fabricated from scratch but rather refined from its
+          natural form—silica, which is abundant in sand and quartz. The process
+          begins by mixing silica with carbon in an electric arc furnace. At
+          temperatures exceeding 2,000°C, the carbon acts as a reducing agent,
+          stripping away oxygen from the silica and yielding a crude form of
+          silicon known as metallurgical-grade silicon. This initial product
+          contains impurities and is subsequently purified through methods such
+          as the Siemens process or chemical vapor deposition, especially when
+          ultra-high purity is required for semiconductor applications. Thus,
+          through a combination of high-temperature reduction and sophisticated
+          refining techniques, silicon is transformed from an intractable,
+          naturally occurring mineral into a vital component for modern
+          electronics and solar technology.
+        </p>
       </div>
     </section>
 
@@ -271,12 +373,59 @@
       </div>
     </section>
 
-    <section id="register">
-      <h2>4. Register</h2>
-      <p>
-        Registers are small, fast memory units inside the CPU used to store
-        intermediate results and instructions during execution.
-      </p>
+    <section id="register-memory">
+      <div class="section-header">
+        <img src="../views/assets/color.png" alt="color" class="color" />
+        <h2 class="section-head">Register and Memory</h2>
+      </div>
+      <div class="p-container-fttc">
+        <div>
+          <img
+            src="./assets/register-memory.png"
+            style="
+              width: 300px;
+              margin-top: 20px;
+              margin-right: 20px;
+              border-width: 1px;
+              border-color: black;
+              border-style: solid;
+              float: left;
+            "
+          />
+          <p>
+            A <strong>register</strong> is a small amount of fast, temporary
+            storage inside a CPU used to hold data, addresses, or instructions
+            currently being processed. Registers are built from
+            <strong>flip-flops</strong>—basic sequential circuits that store a
+            single bit of data.
+          </p>
+
+          <p>
+            <strong>Memory</strong>, on the other hand, refers to larger
+            structures that can store vast amounts of data over time. Memory
+            units, like RAM or ROM, are constructed from arrays of storage
+            cells—each one capable of holding a bit or a group of bits. Unlike
+            registers, memory is external to the CPU and communicates through
+            buses.
+          </p>
+        </div>
+        <div>
+          <p>
+            Both registers and memory rely on
+            <strong>sequential circuits</strong>, which means they use clock
+            signals to synchronize when data is written or read. This allows
+            computers to remember past states, a key difference from
+            combinational logic. Flip-flops, latches, and timing control are
+            critical for making this work.
+          </p>
+          <p>If you're curious:</p>
+          <div style="display: flex; justify-content: center">
+            <button>What’s the difference between RAM and a register?</button>
+            <button>How do flip-flops store bits?</button>
+            <button>Can I build memory from logic gates?</button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="cpu">
@@ -330,6 +479,6 @@
       </p>
     </section>
 
-    <script type="module" src="./script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
