@@ -1,10 +1,16 @@
 /* Sticky secondary header */
 .section-nav {
   position: sticky;
-  top: 119px;
+  top: 120px;
   background-color: black; /* or use your preferred background */
   padding: 1px 1px;
   z-index: 999;
+  display: flex;
+  justify-content: center; /* Center the nav items */
+  align-items: center; /* Center vertically */
+  height: 50px; /* Fixed height for the nav bar */
+  white-space: nowrap; /* Prevent items from wrapping */
+  font-size: 2.5vh; /* Font size for the links */
 }
 
 .section-nav ul {
@@ -15,6 +21,7 @@
   padding: 0;
   overflow-x: auto;
   justify-content: center; /* Horizontal centering */
+  min-width: 200px;
 }
 
 .section-nav .section-link {

@@ -104,6 +104,7 @@
     <!-- Sticky Secondary Header -->
     <nav class="section-nav">
       <ul class="section-nav-li-container">
+        <li><a href="#rocks" class="section-link">Rocks!</a></li>
         <li><a href="#transistor" class="section-link">Transistor</a></li>
         <li><a href="#logic-gates" class="section-link">Logic Gates</a></li>
         <li>
@@ -132,6 +133,119 @@
     </style>
 
     <!-- Sections -->
+    <section id="rocks">
+      <div class="section-header">
+        <img src="../views/assets/color.png" alt="color" class="color" />
+        <h2 class="section-head">Transistor</h2>
+      </div>
+      <div class="p-container-fttc">
+        <div>
+          <div style="display: flex; flex-direction: column; float: left">
+            <img
+              src="./assets/sand.png"
+              style="
+                width: 150px;
+                margin-top: 20px;
+                margin-right: 20px;
+                border-width: 1px;
+                border-color: black;
+                border-style: solid;
+                float: left;
+              "
+            />
+            <img
+              src="./assets/silicon.png"
+              style="
+                width: 150px;
+                margin-top: 20px;
+                margin-right: 20px;
+                border-width: 1px;
+                border-color: black;
+                border-style: solid;
+                float: left;
+              "
+            />
+          </div>
+
+          <p style="text-indent: 2em">
+            It begins with sand — the kind that clings to your shoes at the
+            beach. Inside it hides silicon dioxide, one of Earth’s most common
+            compounds. On its own, it’s ordinary. But with care, we extract the
+            silicon, melt it down, and grow it into a perfect crystal. A
+            shimmering rod of order, where every atom falls in line.
+          </p>
+
+          <p style="margin-top: 10px">
+            We slice that crystal into thin wafers — smooth, flawless disks. But
+            pure silicon still isn’t enough. To awaken its potential, we tweak
+            it. With a process called doping, we add just a whisper of other
+            elements — a few atoms of phosphorus or boron. Suddenly, the
+            material can change. It can shift from silence to signal, from
+            stillness to flow.
+          </p>
+        </div>
+        <div>
+          <p>
+            This once-lifeless shard of Earth can now respond to voltage,
+            regulate current, and obey invisible rules. What was once rock is
+            now something entirely new. And then, it became transistor.
+          </p>
+          <p>If you are curious:</p>
+          <div style="display: flex; justify-content: center">
+            <button>But What is semiconductor?</button>
+            <button>But How does a transistor Work?</button>
+            <button>Can I make one?</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown" onclick="toggleDropdown(this)">
+        <span>Header</span>
+        <span class="arrow">&#9654;</span>
+        <!-- Unicode for '>' triangle -->
+      </div>
+      <div class="dropdown-content">
+        <p>
+          Silicon is not fabricated from scratch but rather refined from its
+          natural form—silica, which is abundant in sand and quartz. The process
+          begins by mixing silica with carbon in an electric arc furnace. At
+          temperatures exceeding 2,000°C, the carbon acts as a reducing agent,
+          stripping away oxygen from the silica and yielding a crude form of
+          silicon known as metallurgical-grade silicon. This initial product
+          contains impurities and is subsequently purified through methods such
+          as the Siemens process or chemical vapor deposition, especially when
+          ultra-high purity is required for semiconductor applications. Thus,
+          through a combination of high-temperature reduction and sophisticated
+          refining techniques, silicon is transformed from an intractable,
+          naturally occurring mineral into a vital component for modern
+          electronics and solar technology.
+        </p>
+      </div>
+
+      <div class="dropdown" onclick="toggleDropdown(this)">
+        <span>Header</span>
+        <span class="arrow">&#9654;</span>
+        <!-- Unicode for '>' triangle -->
+      </div>
+      <div class="dropdown-content">
+        <p>
+          Silicon is not fabricated from scratch but rather refined from its
+          natural form—silica, which is abundant in sand and quartz. The process
+          begins by mixing silica with carbon in an electric arc furnace. At
+          temperatures exceeding 2,000°C, the carbon acts as a reducing agent,
+          stripping away oxygen from the silica and yielding a crude form of
+          silicon known as metallurgical-grade silicon. This initial product
+          contains impurities and is subsequently purified through methods such
+          as the Siemens process or chemical vapor deposition, especially when
+          ultra-high purity is required for semiconductor applications. Thus,
+          through a combination of high-temperature reduction and sophisticated
+          refining techniques, silicon is transformed from an intractable,
+          naturally occurring mineral into a vital component for modern
+          electronics and solar technology.
+        </p>
+      </div>
+    </section>
+
     <section id="transistor">
       <div class="section-header">
         <img src="../views/assets/color.png" alt="color" class="color" />
@@ -428,55 +542,189 @@
       </div>
     </section>
 
-    <section id="cpu">
-      <h2>5. CPU (Central Processing Unit)</h2>
-      <p>
-        The CPU is the brain of the computer. It fetches, decodes, and executes
-        instructions using the ALU, registers, and control unit.
-      </p>
+    <section id="alu">
+      <div class="section-header">
+        <img src="../views/assets/color.png" alt="color" class="color" />
+        <h2 class="section-head">Arithmatic Logic Unit</h2>
+      </div>
+      <div class="p-container-fttc">
+        <div>
+          <img
+            src="./assets/alu.png"
+            style="
+              width: 300px;
+              margin-top: 20px;
+              margin-right: 20px;
+              border-width: 1px;
+              border-color: black;
+              border-style: solid;
+              float: left;
+            "
+          />
+          <p>
+            The <strong>Arithmetic Logic Unit</strong> (ALU) is a crucial
+            component of the CPU, responsible for performing mathematical and
+            logical operations. Whether it’s adding two numbers, comparing
+            values, or shifting bits around, the ALU handles the heavy lifting.
+            It takes inputs from registers, processes them according to the
+            instructions in the CPU, and then sends the result back to the
+            registers or memory. The ALU is fundamental to executing the logic
+            that powers everything a computer does.
+          </p>
+
+          <p>
+            Inside the ALU, the operations are divided into two categories:
+            <strong>arithmetic operations</strong> (like addition, subtraction,
+            multiplication, etc.) and <strong>logic operations</strong> (like
+            AND, OR, NOT, XOR). These operations are carried out through a
+            combination of <strong>combinational logic</strong> circuits and
+            control signals, making the ALU a sophisticated combination of both
+            mathematical precision and logical reasoning.
+          </p>
+        </div>
+        <div>
+          <p>
+            Unlike memory or registers, which store data temporarily or
+            permanently, the ALU’s job is more transient — it only processes the
+            data as it passes through and then passes the results along. It’s
+            the heart of the CPU’s computation power, performing the tasks that
+            make computers capable of executing programs, playing games,
+            processing data, and more.
+          </p>
+          <p>If you're curious:</p>
+          <div style="display: flex; justify-content: center">
+            <button>What’s the difference between RAM and a register?</button>
+            <button>How do flip-flops store bits?</button>
+            <button>Can I build memory from logic gates?</button>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="machine-code">
-      <h2>6. Machine Code</h2>
-      <p>
-        Machine code is the lowest-level programming language, consisting of
-        binary instructions directly understood by the CPU.
-      </p>
+    <section id="cpu-control-logic">
+      <div class="section-header">
+        <img src="../views/assets/color.png" alt="color" class="color" />
+        <h2 class="section-head">CPU and Control Logic</h2>
+      </div>
+      <div class="p-container-fttc">
+        <div>
+          <img
+            src="./assets/cpu.png"
+            style="
+              width: 300px;
+              margin-top: 20px;
+              margin-right: 20px;
+              border-width: 1px;
+              border-color: black;
+              border-style: solid;
+              float: left;
+            "
+          />
+          <p>
+            The <strong>CPU</strong> (Central Processing Unit) is the brain of
+            the computer, the component responsible for executing instructions
+            that make up programs. It takes input data, processes it, and
+            produces output, effectively making decisions based on the logic
+            encoded in the program. The CPU is made up of several key parts,
+            including the ALU (Arithmetic Logic Unit), the registers, and the
+            control unit. Together, these parts work in harmony to carry out the
+            tasks required for computing, from simple calculations to complex
+            algorithms.
+          </p>
+
+          <p>
+            The <strong>Control Logic</strong>, often housed within the
+            <strong>Control Unit</strong> of the CPU, manages the entire process
+            of instruction execution. It interprets the program instructions and
+            sends the necessary signals to coordinate the flow of data between
+            registers, memory, and the ALU. Think of control logic as the
+            conductor of an orchestra — ensuring that all components work
+            together at the right time. It uses a clock signal to synchronize
+            the execution of instructions, and through a process known as the
+            <strong>fetch-decode-execute cycle</strong>, it makes sure the CPU
+            is constantly moving forward in processing the program.
+          </p>
+        </div>
+        <div>
+          <p>
+            The control logic also plays a critical role in decision-making
+            within the CPU. It determines which operations are to be executed,
+            when to read data from memory, when to write it back, and how to
+            handle branches in the program flow (like loops or conditional
+            statements). Without the control logic, even the most powerful ALU
+            would be rendered useless — it’s what gives the CPU the ability to
+            follow complex instructions and execute programs step by step.
+          </p>
+          <p>If you're curious:</p>
+          <div style="display: flex; justify-content: center">
+            <button>What’s the difference between RAM and a register?</button>
+            <button>How do flip-flops store bits?</button>
+            <button>Can I build memory from logic gates?</button>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="assembly">
-      <h2>7. Assembly Language</h2>
-      <p>
-        Assembly language is a human-readable representation of machine code,
-        using mnemonics to represent instructions.
-      </p>
-    </section>
+    <section id="computer">
+      <div class="section-header">
+        <img src="../views/assets/color.png" alt="color" class="color" />
+        <h2 class="section-head">Computer</h2>
+      </div>
+      <div class="p-container-fttc">
+        <div>
+          <img
+            src="./assets/computer.png"
+            style="
+              width: 300px;
+              margin-top: 20px;
+              margin-right: 20px;
+              border-width: 1px;
+              border-color: black;
+              border-style: solid;
+              float: left;
+            "
+          />
+          <p>
+            A <strong>computer</strong> is a system made of interconnected
+            components that work together to process data and perform tasks. At
+            its core is the <strong>CPU</strong>, which executes instructions
+            and drives the operation of the entire machine. But the CPU alone is
+            not enough — it needs memory to store data, input devices to receive
+            information, output devices to display results, and storage to save
+            everything long-term.
+          </p>
 
-    <section id="os">
-      <h2>8. Operating System</h2>
-      <p>
-        The operating system manages hardware resources and provides a platform
-        for software to run. It bridges users, programs, and the computer
-        hardware.
-      </p>
-    </section>
-
-    <section id="programming">
-      <h2>9. Programming</h2>
-      <p>
-        Programming allows humans to instruct computers using higher-level
-        languages like Python, C, or Java, which are eventually translated into
-        machine code.
-      </p>
-    </section>
-
-    <section id="application">
-      <h2>10. Application</h2>
-      <p>
-        Applications are software tools designed for users to perform specific
-        tasks, like browsing the web, editing text, or playing music, all made
-        possible by layers beneath.
-      </p>
+          <p>
+            The computer's <strong>memory</strong> (like RAM) holds data
+            temporarily while the CPU works, enabling fast access during program
+            execution. <strong>Storage devices</strong> such as hard drives or
+            SSDs keep data even when the computer is turned off.
+            <strong>Input devices</strong> like keyboards, mice, or sensors
+            allow us to interact with the machine, while
+            <strong>output devices</strong> like monitors or printers present
+            the results. These components are all connected through a
+            communication system known as the <strong>bus</strong>, which
+            transfers data between them.
+          </p>
+        </div>
+        <div>
+          <p>
+            The control logic also plays a critical role in decision-making
+            within the CPU. It determines which operations are to be executed,
+            when to read data from memory, when to write it back, and how to
+            handle branches in the program flow (like loops or conditional
+            statements). Without the control logic, even the most powerful ALU
+            would be rendered useless — it’s what gives the CPU the ability to
+            follow complex instructions and execute programs step by step.
+          </p>
+          <p>If you're curious:</p>
+          <div style="display: flex; justify-content: center">
+            <button>What’s the difference between RAM and a register?</button>
+            <button>How do flip-flops store bits?</button>
+            <button>Can I build memory from logic gates?</button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <script src="./script.js"></script>

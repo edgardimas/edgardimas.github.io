@@ -27,3 +27,15 @@ function toggleDropdown(element) {
   const arrow = element.querySelector(".arrow");
   arrow.classList.toggle("rotate");
 }
+
+const container = document.querySelector(".section-nav-li-container");
+const leftBtn = document.querySelector(".scroll-btn.left");
+const rightBtn = document.querySelector(".scroll-btn.right");
+
+leftBtn.addEventListener("click", () => {
+  container.scrollBy({ left: -200, behavior: "smooth" });
+});
+
+rightBtn.addEventListener("click", () => {
+  container.scrollBy({ left: 200, behavior: "smooth" });
+});
