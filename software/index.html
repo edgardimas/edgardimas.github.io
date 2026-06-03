@@ -5,62 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ed's Explorer Log</title>
     <link rel="stylesheet" href="../views/styles/style.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <style>
-      .dropdown {
-        cursor: pointer;
-        padding: 10px;
-        background-color: #f0f0f0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        border: 1px solid #ccc;
-        user-select: none;
-      }
-
-      .arrow {
-        transition: transform 0.3s ease;
-      }
-
-      .arrow.rotate {
-        transform: rotate(90deg);
-      }
-
-      .dropdown-content {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-        background-color: #fafafa;
-        border: 1px solid #ccc;
-        border-top: none;
-      }
-
-      .dropdown-content-inner {
-        padding: 0 10px;
-        opacity: 0;
-        transition:
-          padding 0.4s ease,
-          opacity 0.4s ease;
-      }
-
-      .dropdown.open + .dropdown-content {
-        max-height: 200px; /* enough for your content */
-      }
-
-      .dropdown.open + .dropdown-content .dropdown-content-inner {
-        padding: 100px;
-        opacity: 1;
-      }
-
-      .p-container-fttc {
-        background-color: rgb(255, 254, 245);
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin: 20px 0;
-      }
-    </style>
   </head>
 
   <body>
@@ -132,95 +76,25 @@
     </style>
 
     <!-- Sections -->
-    <section id="machine-code">
+    <section id="code" data-include="./code.html">
       <div class="section-header">
         <img src="../views/assets/color.png" alt="color" class="color" />
-        <h2 class="section-head">Machine Code</h2>
+        <h2 class="section-head">Code: The Core Idea</h2>
       </div>
-      <div class="p-container-fttc">
-        <div>
-          <div style="display: flex; flex-direction: column; float: left">
-      
-          <p style="text-indent: 2em">
-            It begins with sand — the kind that clings to your shoes at the
-            beach. Inside it hides silicon dioxide, one of Earth’s most common
-            compounds. On its own, it’s ordinary. But with care, we extract the
-            silicon, melt it down, and grow it into a perfect crystal. A
-            shimmering rod of order, where every atom falls in line.
-          </p>
-
-          <p style="margin-top: 10px">
-            We slice that crystal into thin wafers — smooth, flawless disks. But
-            pure silicon still isn’t enough. To awaken its potential, we tweak
-            it. With a process called doping, we add just a whisper of other
-            elements — a few atoms of phosphorus or boron. Suddenly, the
-            material can change. It can shift from silence to signal, from
-            stillness to flow.
-          </p>
-        </div>
-        <div>
-          <p>
-            This once-lifeless shard of Earth can now respond to voltage,
-            regulate current, and obey invisible rules. What was once rock is
-            now something entirely new. And then, it became transistor.
-          </p>
-          <p>If you are curious:</p>
-          <div style="display: flex; justify-content: center">
-            <button>But What is semiconductor?</button>
-            <button>But How does a transistor Work?</button>
-            <button>Can I make one?</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="dropdown" onclick="toggleDropdown(this)">
-        <span>Header</span>
-        <span class="arrow">&#9654;</span>
-        <!-- Unicode for '>' triangle -->
-      </div>
-      <div class="dropdown-content">
-        <p>
-          Silicon is not fabricated from scratch but rather refined from its
-          natural form—silica, which is abundant in sand and quartz. The process
-          begins by mixing silica with carbon in an electric arc furnace. At
-          temperatures exceeding 2,000°C, the carbon acts as a reducing agent,
-          stripping away oxygen from the silica and yielding a crude form of
-          silicon known as metallurgical-grade silicon. This initial product
-          contains impurities and is subsequently purified through methods such
-          as the Siemens process or chemical vapor deposition, especially when
-          ultra-high purity is required for semiconductor applications. Thus,
-          through a combination of high-temperature reduction and sophisticated
-          refining techniques, silicon is transformed from an intractable,
-          naturally occurring mineral into a vital component for modern
-          electronics and solar technology.
-        </p>
-      </div>
-
-      <div class="dropdown" onclick="toggleDropdown(this)">
-        <span>Header</span>
-        <span class="arrow">&#9654;</span>
-        <!-- Unicode for '>' triangle -->
-      </div>
-      <div class="dropdown-content">
-        <p>
-          Silicon is not fabricated from scratch but rather refined from its
-          natural form—silica, which is abundant in sand and quartz. The process
-          begins by mixing silica with carbon in an electric arc furnace. At
-          temperatures exceeding 2,000°C, the carbon acts as a reducing agent,
-          stripping away oxygen from the silica and yielding a crude form of
-          silicon known as metallurgical-grade silicon. This initial product
-          contains impurities and is subsequently purified through methods such
-          as the Siemens process or chemical vapor deposition, especially when
-          ultra-high purity is required for semiconductor applications. Thus,
-          through a combination of high-temperature reduction and sophisticated
-          refining techniques, silicon is transformed from an intractable,
-          naturally occurring mineral into a vital component for modern
-          electronics and solar technology.
-        </p>
+      <div
+        class="section-content-placeholder"
+        style="
+          padding: 20px;
+          background: rgba(255, 255, 255, 0.08);
+          border-radius: 12px;
+          margin-bottom: 40px;
+        "
+      >
+        <p>Loading machine code content…</p>
       </div>
     </section>
 
-    <section id="transistor">
+    <section id="binary">
       <div class="section-header">
         <img src="../views/assets/color.png" alt="color" class="color" />
         <h2 class="section-head">Transistor</h2>
@@ -347,7 +221,7 @@
       </div>
     </section>
 
-    <section id="logic-gates">
+    <section id="assembly">
       <div class="section-header">
         <img src="../views/assets/color.png" alt="color" class="color" />
         <h2 class="section-head">Logic Gates</h2>
@@ -701,6 +575,6 @@
       </div>
     </section>
 
-    <script src="./script.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>

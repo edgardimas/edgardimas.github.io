@@ -12,6 +12,7 @@
 @import "./library.css";
 @import "./second-navbar.css";
 @import "./footer.css";
+@import "./dropdown.css";
 
 html {
   scroll-behavior: smooth;
@@ -202,4 +203,20 @@ nav ul li a {
 
 a img {
   display: block;
+}
+
+.p-container-fttc {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  gap: 50px;
+  background-color: rgb(255, 254, 245);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.p-container-fttc > * {
+  flex: 1;
 }
