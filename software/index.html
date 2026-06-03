@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -39,7 +39,9 @@
       .dropdown-content-inner {
         padding: 0 10px;
         opacity: 0;
-        transition: padding 0.4s ease, opacity 0.4s ease;
+        transition:
+          padding 0.4s ease,
+          opacity 0.4s ease;
       }
 
       .dropdown.open + .dropdown-content {
@@ -89,7 +91,7 @@
                   >Software</a
                 >
               </li>
-              <li><a href="/network">Network</a></li>
+              <li><a href="/network">Network & Security</a></li>
               <li><a href="/ai">AI</a></li>
               <li><a href="/author">Author</a></li>
             </ul>
@@ -107,14 +109,19 @@
     <!-- Sticky Secondary Header -->
     <nav class="section-nav">
       <ul class="section-nav-li-container">
-        <li><a href="#machine-code" class="section-link">Machine Code</a></li>
+        <li><a href="#machine-code" class="section-link">Code</a></li>
+        <li><a href="#machine-code" class="section-link">Binary</a></li>
         <li><a href="#assembly" class="section-link">Assembly</a></li>
+        <li><a href="#assembly" class="section-link">C</a></li>
         <li><a href="#bios-uefi" class="section-link">BIOS/UEFI</a></li>
+        <li>
+          <a href="#kernel" class="section-link">Bootloader</a>
+        </li>
         <li>
           <a href="#kernel" class="section-link">Kernel</a>
         </li>
         <li>
-          <a href="#windows" class="section-link">Windows/OS</a>
+          <a href="#windows" class="section-link">Operating System</a>
         </li>
       </ul>
     </nav>
@@ -133,32 +140,7 @@
       <div class="p-container-fttc">
         <div>
           <div style="display: flex; flex-direction: column; float: left">
-            <img
-              src="./assets/sand.png"
-              style="
-                width: 150px;
-                margin-top: 20px;
-                margin-right: 20px;
-                border-width: 1px;
-                border-color: black;
-                border-style: solid;
-                float: left;
-              "
-            />
-            <img
-              src="./assets/silicon.png"
-              style="
-                width: 150px;
-                margin-top: 20px;
-                margin-right: 20px;
-                border-width: 1px;
-                border-color: black;
-                border-style: solid;
-                float: left;
-              "
-            />
-          </div>
-
+      
           <p style="text-indent: 2em">
             It begins with sand — the kind that clings to your shoes at the
             beach. Inside it hides silicon dioxide, one of Earth’s most common
