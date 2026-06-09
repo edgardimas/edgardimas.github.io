@@ -1,3 +1,8 @@
+// The section loader looks for `data-include` on <section> elements.
+// It uses `scripts/loader.js` to fetch the provided URL, then inserts
+// the matching fragment (an element with the same id) or the full HTML
+// into the section. This enables reusing separate HTML files for page
+// sections like headers, footers, or content blocks.
 import { initSectionLoader } from "./loader.js";
 import { setupDropdowns } from "./dropdown.js";
 import { initScrollSpy } from "./scrollspy.js";

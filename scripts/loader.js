@@ -19,7 +19,7 @@ export function loadSectionFragment(sectionId, url) {
     })
     .then((html) => {
       const parser = new DOMParser();
-      const doc = parser.parseFromString(html, 'text/html');
+      const doc = parser.parseFromString(html, "text/html");
       const fragment = doc.getElementById(sectionId);
 
       if (fragment) {
@@ -39,7 +39,7 @@ export function loadSectionFragment(sectionId, url) {
 }
 
 export function initSectionLoader() {
-  const fragmentSections = document.querySelectorAll('section[data-include]');
+  const fragmentSections = document.querySelectorAll("section[data-include]");
   fragmentSections.forEach((section) => {
     const url = section.dataset.include;
     if (url) {
