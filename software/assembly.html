@@ -1,21 +1,25 @@
-<section id="binary">
+<section id="assembly">
   <div class="section-header">
     <img src="../views/assets/color.png" alt="color" class="color" />
-    <h2 class="section-head">Binary: The 0 and 1s</h2>
+    <h2 class="section-head">Assembly: the low level programming</h2>
   </div>
   <div class="p-container">
     <div>
       <h3>Introduction</h3>
       <p style="text-indent: 2em; margin-top: 10px">
-        Binary is simply a counting system that only uses two digits, 0 and 1,
-        instead of the ten digits we use in everyday life (0 through 9). Our
-        normal counting system is called "base 10", meaning each position in a
-        number represents a power of 10. So the number 345 means 3 hundreds, 4
-        tens, and 5 ones. Binary works the same way, but each position
-        represents a power of 2 instead. So in binary, the positions from right
-        to left represent 1, 2, 4, 8, 16, 32, and so on, each one doubling the
-        previous. The binary number 1011, for example, means one 8, zero 4s, one
-        2, and one 1, which adds up to 11 in regular numbers.
+        Assembly language was the first step humans took toward making computers
+        easier to program, sitting just one thin layer above raw binary.Assembly
+        language was the first step humans took toward making computers easier
+        to program, sitting just one thin layer above raw binary. Instead of
+        writing long strings of 1s and 0s, programmers could write short
+        readable words called "mnemonics". For example, instead of typing the
+        binary pattern 10110000 01100001, you could write MOV AL, 97, which
+        tells the processor to move the value 97 into a specific storage spot. A
+        program called an "assembler" would then translate those human-readable
+        words back into the binary patterns the processor actually understands.
+        Each assembly instruction mapped directly to exactly one binary
+        instruction, so it was still a very close, one-to-one relationship with
+        the hardware.
       </p>
     </div>
     <div>
@@ -42,18 +46,18 @@
   </div>
   <div class="dropdown-content">
     <p>
-      Silicon is not fabricated from scratch but rather refined from its natural
-      form—silica, which is abundant in sand and quartz. The process begins by
-      mixing silica with carbon in an electric arc furnace. At temperatures
-      exceeding 2,000°C, the carbon acts as a reducing agent, stripping away
-      oxygen from the silica and yielding a crude form of silicon known as
-      metallurgical-grade silicon. This initial product contains impurities and
-      is subsequently purified through methods such as the Siemens process or
-      chemical vapor deposition, especially when ultra-high purity is required
-      for semiconductor applications. Thus, through a combination of
-      high-temperature reduction and sophisticated refining techniques, silicon
-      is transformed from an intractable, naturally occurring mineral into a
-      vital component for modern electronics and solar technology.
+      The tricky part of assembly is that it is tied completely to the specific
+      processor it was written for. Different processors have different sets of
+      instructions, different storage locations, and different rules. A program
+      written in assembly for one machine would not work on another. Programmers
+      also had to manage everything manually, telling the computer exactly where
+      to store each piece of data in memory, in what order to do every small
+      step, and when to clean up after each operation. Writing even a simple
+      task like adding two numbers and displaying the result required many lines
+      of precise, careful instructions. It was still tedious work, but compared
+      to punch cards and raw binary, it was a meaningful step forward, giving
+      programmers words to think with instead of just patterns of holes and
+      electrical signals.
     </p>
   </div>
 

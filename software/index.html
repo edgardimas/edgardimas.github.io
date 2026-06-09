@@ -53,8 +53,8 @@
     <!-- Sticky Secondary Header -->
     <nav class="section-nav">
       <ul class="section-nav-li-container">
-        <li><a href="#machine-code" class="section-link">Code</a></li>
-        <li><a href="#machine-code" class="section-link">Binary</a></li>
+        <li><a href="#code" class="section-link">Code</a></li>
+        <li><a href="#binary" class="section-link">Binary</a></li>
         <li><a href="#assembly" class="section-link">Assembly</a></li>
         <li><a href="#assembly" class="section-link">C</a></li>
         <li><a href="#bios-uefi" class="section-link">BIOS/UEFI</a></li>
@@ -112,63 +112,21 @@
       </div>
     </section>
 
-    <section id="assembly">
+    <section id="assembly" data-include="./assembly.html">
       <div class="section-header">
         <img src="../views/assets/color.png" alt="color" class="color" />
-        <h2 class="section-head">Logic Gates</h2>
+        <h2 class="section-head">Assembly</h2>
       </div>
-      <div class="p-container">
-        <div>
-          <img
-            src="./assets/nand-bjt.png"
-            style="
-              width: 300px;
-              margin-top: 20px;
-              margin-right: 20px;
-              border-width: 1px;
-              border-color: black;
-              border-style: solid;
-              float: left;
-            "
-          />
-          <p>
-            So, we've got this amazing thing called a transistor—this tiny
-            switch made from semiconductor material. But when you put a bunch of
-            these switches together in the right way, something truly exciting
-            happens: you can build <strong>logic gates</strong>. Now here's the
-            big idea — logic gates are the building blocks of thinking machines.
-            Yep, your computer, your phone, even your smart toaster — they all
-            “think” using these logic gates.
-          </p>
-
-          <p>
-            A logic gate takes in signals (which are just voltages that mean
-            "yes" or "no") and decides what to do with them. For example,
-            there's the <strong>AND gate</strong> — it only turns on if *both*
-            of its inputs are on. Or the <strong>OR gate </strong>, which turns
-            on if *either* input is on. These gates are just little circuits
-            made of transistors, wired up in clever ways.
-          </p>
-        </div>
-        <div>
-          <p>
-            These layers are each made of different types of semiconductor
-            material, either n-type (negative) or p-type (positive). The
-            arrangement of these materials is crucial for controlling the flow
-            of electricity. Emitter: This is where current enters the
-            transistor. Base: A very thin layer of semiconductor material that
-            controls the current flowing from the emitter to the collector.
-            Collector: The region where current exits the transistor. How It
-            Works Think of the transistor as a valve that regulates the flow of
-            current.
-          </p>
-          <p>If you are curious:</p>
-          <div style="display: flex; justify-content: center">
-            <button>So what *is* a logic gate, really?</button>
-            <button>Can logic gates add numbers?</button>
-            <button>Could I build one myself?</button>
-          </div>
-        </div>
+      <div
+        class="section-content-placeholder"
+        style="
+          padding: 20px;
+          background: rgba(255, 255, 255, 0.08);
+          border-radius: 12px;
+          margin-bottom: 40px;
+        "
+      >
+        <p>Loading assembly content…</p>
       </div>
     </section>
 
