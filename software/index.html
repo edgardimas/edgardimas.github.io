@@ -56,10 +56,10 @@
         <li><a href="#code" class="section-link">Code</a></li>
         <li><a href="#binary" class="section-link">Binary</a></li>
         <li><a href="#assembly" class="section-link">Assembly</a></li>
-        <li><a href="#assembly" class="section-link">C</a></li>
-        <li><a href="#bios-uefi" class="section-link">BIOS/UEFI</a></li>
+        <li><a href="#c" class="section-link">C</a></li>
+        <li><a href="#bios" class="section-link">BIOS/UEFI</a></li>
         <li>
-          <a href="#kernel" class="section-link">Bootloader</a>
+          <a href="#bootloader" class="section-link">Bootloader</a>
         </li>
         <li>
           <a href="#kernel" class="section-link">Kernel</a>
@@ -166,62 +166,21 @@
       </div>
     </section>
 
-    <section id="alu">
+    <section id="bootloader" data-include="./bootloader.html">
       <div class="section-header">
         <img src="../views/assets/color.png" alt="color" class="color" />
-        <h2 class="section-head">Arithmatic Logic Unit</h2>
+        <h2 class="section-head">C</h2>
       </div>
-      <div class="p-container">
-        <div>
-          <img
-            src="./assets/alu.png"
-            style="
-              width: 300px;
-              margin-top: 20px;
-              margin-right: 20px;
-              border-width: 1px;
-              border-color: black;
-              border-style: solid;
-              float: left;
-            "
-          />
-          <p>
-            The <strong>Arithmetic Logic Unit</strong> (ALU) is a crucial
-            component of the CPU, responsible for performing mathematical and
-            logical operations. Whether it’s adding two numbers, comparing
-            values, or shifting bits around, the ALU handles the heavy lifting.
-            It takes inputs from registers, processes them according to the
-            instructions in the CPU, and then sends the result back to the
-            registers or memory. The ALU is fundamental to executing the logic
-            that powers everything a computer does.
-          </p>
-
-          <p>
-            Inside the ALU, the operations are divided into two categories:
-            <strong>arithmetic operations</strong> (like addition, subtraction,
-            multiplication, etc.) and <strong>logic operations</strong> (like
-            AND, OR, NOT, XOR). These operations are carried out through a
-            combination of <strong>combinational logic</strong> circuits and
-            control signals, making the ALU a sophisticated combination of both
-            mathematical precision and logical reasoning.
-          </p>
-        </div>
-        <div>
-          <p>
-            Unlike memory or registers, which store data temporarily or
-            permanently, the ALU’s job is more transient — it only processes the
-            data as it passes through and then passes the results along. It’s
-            the heart of the CPU’s computation power, performing the tasks that
-            make computers capable of executing programs, playing games,
-            processing data, and more.
-          </p>
-          <p>If you're curious:</p>
-          <div style="display: flex; justify-content: center">
-            <button>What’s the difference between RAM and a register?</button>
-            <button>How do flip-flops store bits?</button>
-            <button>Can I build memory from logic gates?</button>
-          </div>
-        </div>
+      <div
+        class="section-content-placeholder"
+        style="
+          padding: 20px;
+          background: rgba(255, 255, 255, 0.08);
+          border-radius: 12px;
+          margin-bottom: 40px;
+        "
+      >
+        <p>Loading BIOS/UEFI content…</p>
       </div>
     </section>
 
