@@ -1,0 +1,87 @@
+<section id="kernel">
+  <div class="section-header">
+    <img src="../views/assets/color.png" alt="color" class="color" />
+    <h2 class="section-head">Kernel</h2>
+  </div>
+  <div class="p-container">
+    <div>
+      <h3>Introduction</h3>
+      <p style="text-indent: 2em; margin-top: 10px">
+        The kernel is the core of an operating system, the part that sits
+        directly on top of the hardware and manages everything happening inside
+        the computer.The kernel is the core of an operating system, the part
+        that sits directly on top of the hardware and manages everything
+        happening inside the computer. Once the bootloader loads it into memory,
+        the kernel takes full control and never gives it up until the machine
+        shuts down. Its main responsibilities are managing the processor
+        (deciding which programs get to run and for how long), managing memory
+        (making sure each program gets its own space and doesn't accidentally
+        reach into another program's space), and handling input and output,
+        meaning it coordinates communication between software and hardware
+        devices like your keyboard, screen, and storage drive. Every program
+        running on your computer, whether it's a browser or a text editor, has
+        to go through the kernel to access any hardware resource.
+      </p>
+    </div>
+    <div>
+      <p style="margin-top: 10px">
+        One useful way to think about the kernel is as a strict traffic
+        controller sitting at the center of a busy intersection. Programs are
+        not allowed to talk to hardware directly; they have to make a formal
+        request to the kernel, which then decides whether to allow it, when to
+        handle it, and how. This separation is intentional, because it prevents
+        any single program from accidentally crashing the whole system or
+        accessing data it shouldn't. The part of the computer where the kernel
+        operates is called "kernel space", and everything else, your apps and
+        programs, runs in "user space". That boundary is one of the reasons your
+        computer can have a single program crash and freeze without taking
+        everything else down with it. The kernel contains the problem and keeps
+        the rest of the system running.
+      </p>
+    </div>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>Header</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      Silicon is not fabricated from scratch but rather refined from its natural
+      form—silica, which is abundant in sand and quartz. The process begins by
+      mixing silica with carbon in an electric arc furnace. At temperatures
+      exceeding 2,000°C, the carbon acts as a reducing agent, stripping away
+      oxygen from the silica and yielding a crude form of silicon known as
+      metallurgical-grade silicon. This initial product contains impurities and
+      is subsequently purified through methods such as the Siemens process or
+      chemical vapor deposition, especially when ultra-high purity is required
+      for semiconductor applications. Thus, through a combination of
+      high-temperature reduction and sophisticated refining techniques, silicon
+      is transformed from an intractable, naturally occurring mineral into a
+      vital component for modern electronics and solar technology.
+    </p>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>Header</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      Silicon is not fabricated from scratch but rather refined from its natural
+      form—silica, which is abundant in sand and quartz. The process begins by
+      mixing silica with carbon in an electric arc furnace. At temperatures
+      exceeding 2,000°C, the carbon acts as a reducing agent, stripping away
+      oxygen from the silica and yielding a crude form of silicon known as
+      metallurgical-grade silicon. This initial product contains impurities and
+      is subsequently purified through methods such as the Siemens process or
+      chemical vapor deposition, especially when ultra-high purity is required
+      for semiconductor applications. Thus, through a combination of
+      high-temperature reduction and sophisticated refining techniques, silicon
+      is transformed from an intractable, naturally occurring mineral into a
+      vital component for modern electronics and solar technology.
+    </p>
+  </div>
+</section>
