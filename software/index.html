@@ -94,130 +94,21 @@
       </div>
     </section>
 
-    <section id="binary">
+    <section id="binary" data-include="./binary.html">
       <div class="section-header">
         <img src="../views/assets/color.png" alt="color" class="color" />
-        <h2 class="section-head">Transistor</h2>
+        <h2 class="section-head">Binary</h2>
       </div>
-      <div class="p-container-fttc">
-        <div>
-          <div style="display: flex; flex-direction: column; float: left">
-            <img
-              src="./assets/transistor.png"
-              style="
-                width: 150px;
-                margin-top: 20px;
-                margin-right: 20px;
-                border-width: 1px;
-                border-color: black;
-                border-style: solid;
-                float: left;
-              "
-            />
-            <img
-              src="./assets/bjt.png"
-              style="
-                width: 150px;
-                margin-top: 20px;
-                margin-right: 20px;
-                border-width: 1px;
-                border-color: black;
-                border-style: solid;
-                float: left;
-              "
-            />
-          </div>
-
-          <p style="text-indent: 2em">
-            The transistor is the building block of all modern electronic
-            devices. It functions as a switch or amplifier and is used to
-            control the flow of electrical signals. At the core of modern
-            electronics, from your smartphone to high-performance computers,
-            lies the transistor — a tiny switch with enormous power.But how does
-            it "know" what to do, and how is it able to control the flow of
-            electricity with such precision? The answer lies in its ability to
-            control electrical current through the properties of semiconductors.
-            The Semiconductor Secret The transistor is made of a material called
-            semiconductor, typically silicon.
-          </p>
-
-          <p style="margin-top: 10px">
-            Unlike conductors like copper or insulators like rubber,
-            semiconductors have electrical properties that can be manipulated by
-            the introduction of impurities — a process known as doping. This
-            means that the transistor can switch between conducting and
-            insulating states depending on the voltage applied to it. This
-            ability to control current flow is what makes the transistor so
-            powerful. The Structure: Three Layers of Control A typical bipolar
-            junction transistor (BJT) consists of three layers: the emitter, the
-            base, and the collector.
-          </p>
-        </div>
-        <div>
-          <p>
-            These layers are each made of different types of semiconductor
-            material, either n-type (negative) or p-type (positive). The
-            arrangement of these materials is crucial for controlling the flow
-            of electricity. Emitter: This is where current enters the
-            transistor. Base: A very thin layer of semiconductor material that
-            controls the current flowing from the emitter to the collector.
-            Collector: The region where current exits the transistor. How It
-            Works Think of the transistor as a valve that regulates the flow of
-            current.
-          </p>
-          <p>If you are curious:</p>
-          <div style="display: flex; justify-content: center">
-            <button>But What is semiconductor?</button>
-            <button>But How does a transistor Work?</button>
-            <button>Can I make one?</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="dropdown" onclick="toggleDropdown(this)">
-        <span>Header</span>
-        <span class="arrow">&#9654;</span>
-        <!-- Unicode for '>' triangle -->
-      </div>
-      <div class="dropdown-content">
-        <p>
-          Silicon is not fabricated from scratch but rather refined from its
-          natural form—silica, which is abundant in sand and quartz. The process
-          begins by mixing silica with carbon in an electric arc furnace. At
-          temperatures exceeding 2,000°C, the carbon acts as a reducing agent,
-          stripping away oxygen from the silica and yielding a crude form of
-          silicon known as metallurgical-grade silicon. This initial product
-          contains impurities and is subsequently purified through methods such
-          as the Siemens process or chemical vapor deposition, especially when
-          ultra-high purity is required for semiconductor applications. Thus,
-          through a combination of high-temperature reduction and sophisticated
-          refining techniques, silicon is transformed from an intractable,
-          naturally occurring mineral into a vital component for modern
-          electronics and solar technology.
-        </p>
-      </div>
-
-      <div class="dropdown" onclick="toggleDropdown(this)">
-        <span>Header</span>
-        <span class="arrow">&#9654;</span>
-        <!-- Unicode for '>' triangle -->
-      </div>
-      <div class="dropdown-content">
-        <p>
-          Silicon is not fabricated from scratch but rather refined from its
-          natural form—silica, which is abundant in sand and quartz. The process
-          begins by mixing silica with carbon in an electric arc furnace. At
-          temperatures exceeding 2,000°C, the carbon acts as a reducing agent,
-          stripping away oxygen from the silica and yielding a crude form of
-          silicon known as metallurgical-grade silicon. This initial product
-          contains impurities and is subsequently purified through methods such
-          as the Siemens process or chemical vapor deposition, especially when
-          ultra-high purity is required for semiconductor applications. Thus,
-          through a combination of high-temperature reduction and sophisticated
-          refining techniques, silicon is transformed from an intractable,
-          naturally occurring mineral into a vital component for modern
-          electronics and solar technology.
-        </p>
+      <div
+        class="section-content-placeholder"
+        style="
+          padding: 20px;
+          background: rgba(255, 255, 255, 0.08);
+          border-radius: 12px;
+          margin-bottom: 40px;
+        "
+      >
+        <p>Loading binary content…</p>
       </div>
     </section>
 
@@ -226,7 +117,7 @@
         <img src="../views/assets/color.png" alt="color" class="color" />
         <h2 class="section-head">Logic Gates</h2>
       </div>
-      <div class="p-container-fttc">
+      <div class="p-container">
         <div>
           <img
             src="./assets/nand-bjt.png"
@@ -286,7 +177,7 @@
         <img src="../views/assets/color.png" alt="color" class="color" />
         <h2 class="section-head">Combinational Circuit</h2>
       </div>
-      <div class="p-container-fttc">
+      <div class="p-container">
         <div>
           <img
             src="./assets/comb-circuit.png"
@@ -340,7 +231,7 @@
         <img src="../views/assets/color.png" alt="color" class="color" />
         <h2 class="section-head">Register and Memory</h2>
       </div>
-      <div class="p-container-fttc">
+      <div class="p-container">
         <div>
           <img
             src="./assets/register-memory.png"
@@ -395,7 +286,7 @@
         <img src="../views/assets/color.png" alt="color" class="color" />
         <h2 class="section-head">Arithmatic Logic Unit</h2>
       </div>
-      <div class="p-container-fttc">
+      <div class="p-container">
         <div>
           <img
             src="./assets/alu.png"
@@ -454,7 +345,7 @@
         <img src="../views/assets/color.png" alt="color" class="color" />
         <h2 class="section-head">CPU and Control Logic</h2>
       </div>
-      <div class="p-container-fttc">
+      <div class="p-container">
         <div>
           <img
             src="./assets/cpu.png"
@@ -518,7 +409,7 @@
         <img src="../views/assets/color.png" alt="color" class="color" />
         <h2 class="section-head">Computer</h2>
       </div>
-      <div class="p-container-fttc">
+      <div class="p-container">
         <div>
           <img
             src="./assets/computer.png"

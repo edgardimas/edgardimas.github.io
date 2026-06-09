@@ -205,7 +205,7 @@ a img {
   display: block;
 }
 
-.p-container-fttc {
+.p-container {
   display: flex;
   justify-content: center;
   text-align: justify;
@@ -217,6 +217,6 @@ a img {
   margin: 20px 0;
 }
 
-.p-container-fttc > * {
+.p-container > * {
   flex: 1;
 }

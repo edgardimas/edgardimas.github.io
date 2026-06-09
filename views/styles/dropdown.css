@@ -45,6 +45,7 @@
 .dropdown.open + .dropdown-content {
   max-height: 350px; /* enough for your content */
   background-color: rgb(255, 254, 245);
+  margin-bottom: 20px;
 }
 
 .dropdown.open + .dropdown-content p {

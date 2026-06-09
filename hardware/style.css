@@ -1,10 +1,10 @@
-.p-container-fttc {
+.p-container {
   display: flex;
   justify-content: center;
   text-align: justify;
   gap: 50px;
 }
 
-.p-container-fttc > * {
+.p-container > * {
   flex: 1;
 }

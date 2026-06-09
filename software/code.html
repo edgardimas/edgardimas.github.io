@@ -3,9 +3,10 @@
     <img src="../views/assets/color.png" alt="color" class="color" />
     <h2 class="section-head">Code: The Core Idea</h2>
   </div>
-  <div class="p-container-fttc">
+  <div class="p-container">
     <div>
       <div style="display: flex; flex-direction: column; float: left"></div>
+      <h3>Introduction</h3>
 
       <p style="text-indent: 2em">
         Lets say you met someone at schooland that someone give you a wink
@@ -29,13 +30,14 @@
       </p>
     </div>
     <div>
-      <p>
-        Human languages are kind of poetry in comparisen to machine language.
+      <p style="text-indent: 2em">
+        Human languages are kind of poetry in comparison to machine language.
         Sometimes, when we want a person to do as we say we praise that person
         first and then demand that person to do something. Of course, it varies
         on individual and condition and which is why we need to adapt our
         language so that it fits to the person we are talking to. However, if we
-        communcate with computer, you will learn how to do a percise command
+        communcate with computer, you will learn how to do a
+        <strong> precise command </strong>
         consistently. Computer will not understand poetry or praises by default
         because the machine were built to help human with their task solely.
         'But my chatgpt can create me a poetry', yes, there is a algorithm
@@ -45,7 +47,6 @@
       <p>I will explain to you:</p>
       <p>1. How we give instruction to the machine (coding)</p>
       <p>2. How that machine translate your code.</p>
-      <p>3. How the machine execute your code.</p>
     </div>
   </div>
 
@@ -58,10 +59,8 @@
     <img
       src="/views/assets/punch-cards.jpg"
       style="
-        width: 400px;
-        margin-top: 20px;
-        margin-right: 20px;
-        margin-left: 20px;
+        width: 350px;
+        margin: 20px;
         border-width: 1px;
         border-color: black;
         border-style: solid;
@@ -69,17 +68,17 @@
       "
     />
     <p>
-      First let me introduced you to punch cards. Punch cards were one of the
-      earliest ways people communicated instructions to computers. Punch cards
-      were one of the earliest ways people communicated instructions to
-      computers. Imagine a stiff paper card, roughly the size of a dollar bill,
-      with rows of numbered positions across it. A machine would punch small
-      rectangular holes into specific spots on that card. Each position on the
-      card had just two possible states: either there was a hole, or there
-      wasn't. That's it. A hole meant "1" and no hole meant "0". Workers would
-      prepare stacks of these cards, each one representing a line of
-      instruction, then feed the entire stack into a computer that would read
-      them one by one.
+      When a stack of punch cards was fed into a card reader, the machine would
+      pass each card under a row of small sensors.When a stack of punch cards
+      was fed into a card reader, the machine would pass each card under a row
+      of small sensors. In early readers, these sensors were tiny metal pins or
+      wire brushes. As the card moved through, the pins would either pass
+      through a hole and complete an electrical circuit (registering a "1"), or
+      they would press against solid paper and the circuit stayed open
+      (registering a "0"). The machine read each card line by line, position by
+      position, translating the physical pattern of holes into a stream of
+      electrical signals. Those signals were then passed along to the computer's
+      processor as a sequence of 1s and 0s.
     </p>
     <p>
       This simple on/off idea, hole or no hole, is the same foundation that
@@ -94,24 +93,35 @@
   </div>
 
   <div class="dropdown" onclick="toggleDropdown(this)">
-    <span>Header</span>
+    <span>How The machine execute our code </span>
     <span class="arrow">&#9654;</span>
     <!-- Unicode for '>' triangle -->
   </div>
   <div class="dropdown-content">
     <p>
-      Silicon is not fabricated from scratch but rather refined from its natural
-      form—silica, which is abundant in sand and quartz. The process begins by
-      mixing silica with carbon in an electric arc furnace. At temperatures
-      exceeding 2,000°C, the carbon acts as a reducing agent, stripping away
-      oxygen from the silica and yielding a crude form of silicon known as
-      metallurgical-grade silicon. This initial product contains impurities and
-      is subsequently purified through methods such as the Siemens process or
-      chemical vapor deposition, especially when ultra-high purity is required
-      for semiconductor applications. Thus, through a combination of
-      high-temperature reduction and sophisticated refining techniques, silicon
-      is transformed from an intractable, naturally occurring mineral into a
-      vital component for modern electronics and solar technology.
+      When a stack of punch cards was fed into a card reader, the machine would
+      pass each card under a row of small sensors.When a stack of punch cards
+      was fed into a card reader, the machine would pass each card under a row
+      of small sensors. In early readers, these sensors were tiny metal pins or
+      wire brushes. As the card moved through, the pins would either pass
+      through a hole and complete an electrical circuit (registering a "1"), or
+      they would press against solid paper and the circuit stayed open
+      (registering a "0"). The machine read each card line by line, position by
+      position, translating the physical pattern of holes into a stream of
+      electrical signals. Those signals were then passed along to the computer's
+      processor as a sequence of 1s and 0s.
+    </p>
+    <p>
+      Once the processor received that stream of signals, it matched the
+      patterns against a set of built-in instructions it already knew. For
+      example, a specific pattern of 1s and 0s might mean "add these two
+      numbers" or "store this value in memory." The processor would carry out
+      each instruction in order, one card at a time, working through the whole
+      stack from top to bottom. This is why dropping a stack of punch cards was
+      such a disaster, because the order mattered completely. If the sequence
+      got shuffled, the computer would receive instructions in the wrong order
+      and produce nonsense results or crash entirely. The cards were, in a very
+      literal sense, a physical program.
     </p>
   </div>
 </section>
