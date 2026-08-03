@@ -1,0 +1,72 @@
+<section id="network">
+  <div class="section-header">
+    <img src="../views/assets/color.png" alt="color" class="color" />
+    <h2 class="section-head">Network: Getting Across the Internet</h2>
+  </div>
+  <div class="p-container">
+    <div>
+      <h3>Introduction</h3>
+      <p style="text-indent: 2em; margin-top: 10px">
+        MAC addresses only make sense to devices on the same local network,
+        so once your data needs to leave your house and travel across the
+        internet, it needs a different kind of address: an IP address. Think
+        of a MAC address like a person's name, useful inside one building,
+        and an IP address like a full street address, useful anywhere in the
+        world. The Network layer's whole job is figuring out the best path
+        to get a piece of data from your IP address to the destination's IP
+        address, possibly hopping through dozens of routers along the way.
+      </p>
+    </div>
+    <div>
+      <p style="margin-top: 10px">
+        Each router along the path looks at the destination IP address and
+        makes a quick decision: which cable or connection should this
+        packet go out on next to get closer to its destination? This is
+        called routing, and it happens over and over, router after router,
+        similar to asking for directions at each intersection instead of
+        knowing the entire route in advance. None of those routers need to
+        know the full journey, they just need to know the next best step,
+        which is what makes the internet able to keep working even when
+        some connections go down.
+      </p>
+    </div>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>IPv4 vs IPv6</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      IPv4 addresses look like 192.168.1.1 and only allow about 4.3 billion
+      unique addresses. That sounds like a lot until you remember phones,
+      laptops, smart TVs, doorbells, and game consoles all need one.
+      IPv6 was created to fix this shortage, using a much longer address
+      format like 2001:0db8:85a3::8a2e:0370:7334, which allows for an
+      almost unimaginably larger number of addresses. Most home networks
+      still rely heavily on IPv4 today, often stretched further with a
+      trick called NAT, but IPv6 adoption keeps growing because the world
+      is genuinely running low on IPv4 addresses to hand out.
+    </p>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>NAT: sharing one address for a whole house</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      Your home probably has one public IP address assigned by your
+      internet provider, yet every device in the house can go online at
+      once. This works through Network Address Translation, or NAT, which
+      your router handles automatically. Your router hands each device a
+      private local IP address, then repackages outgoing traffic to look
+      like it is all coming from the router's single public IP, keeping
+      track of which reply belongs to which device. It is similar to an
+      office building where everyone shares one street address, but the
+      receptionist knows exactly which desk each piece of mail belongs to.
+    </p>
+  </div>
+</section>

@@ -31,11 +31,13 @@
                 <a href="/hardware">Hardware</a>
               </li>
               <li>
-                <a href="/software" style="text-decoration: underline"
-                  >Software</a
+                <a href="/software">Software</a>
+              </li>
+              <li>
+                <a href="/network" style="text-decoration: underline"
+                  >Network & Security</a
                 >
               </li>
-              <li><a href="/network">Network & Security</a></li>
               <li><a href="/ai">AI</a></li>
               <li><a href="/author">Author</a></li>
             </ul>
@@ -53,25 +55,19 @@
     <!-- Sticky Secondary Header -->
     <nav class="section-nav">
       <ul class="section-nav-li-container">
-        <li><a href="#code" class="section-link">Intro</a></li>
-        <li><a href="#binary" class="section-link">Physical</a></li>
-        <li><a href="#assembly" class="section-link">Data Link </a></li>
-        <li><a href="#c" class="section-link">Network</a></li>
-        <li><a href="#bios" class="section-link">Transport</a></li>
+        <li><a href="#intro" class="section-link">Intro</a></li>
+        <li><a href="#physical" class="section-link">Physical</a></li>
+        <li><a href="#datalink" class="section-link">Data Link</a></li>
+        <li><a href="#network" class="section-link">Network</a></li>
+        <li><a href="#transport" class="section-link">Transport</a></li>
         <li>
-          <a href="#bootloader" class="section-link">DNS and HTTP</a>
+          <a href="#dns-http" class="section-link">DNS and HTTP</a>
         </li>
         <li>
-          <a href="#kernel" class="section-link">TLS / HTTPS</a>
+          <a href="#tls" class="section-link">TLS / HTTPS</a>
         </li>
         <li>
-          <a href="#os" class="section-link">Application</a>
-        </li>
-        <li>
-          <a href="#os" class="section-link">Practical tools</a>
-        </li>
-        <li>
-          <a href="#os" class="section-link">Network design</a>
+          <a href="#application" class="section-link">Application</a>
         </li>
       </ul>
     </nav>
@@ -82,10 +78,10 @@
     </style>
 
     <!-- Sections -->
-    <section id="code" data-include="./code.html">
+    <section id="intro" data-include="./intro.html">
       <div class="section-header">
         <img src="../views/assets/color.png" alt="color" class="color" />
-        <h2 class="section-head">Code: The Core Idea</h2>
+        <h2 class="section-head">Intro: What Even Is a Network</h2>
       </div>
       <div
         class="section-content-placeholder"
@@ -96,14 +92,14 @@
           margin-bottom: 40px;
         "
       >
-        <p>Loading machine code content…</p>
+        <p>Loading intro content…</p>
       </div>
     </section>
 
-    <section id="binary" data-include="./binary.html">
+    <section id="physical" data-include="./physical.html">
       <div class="section-header">
         <img src="../views/assets/color.png" alt="color" class="color" />
-        <h2 class="section-head">Binary</h2>
+        <h2 class="section-head">Physical</h2>
       </div>
       <div
         class="section-content-placeholder"
@@ -114,14 +110,14 @@
           margin-bottom: 40px;
         "
       >
-        <p>Loading binary content…</p>
+        <p>Loading physical layer content…</p>
       </div>
     </section>
 
-    <section id="assembly" data-include="./assembly.html">
+    <section id="datalink" data-include="./datalink.html">
       <div class="section-header">
         <img src="../views/assets/color.png" alt="color" class="color" />
-        <h2 class="section-head">Assembly</h2>
+        <h2 class="section-head">Data Link</h2>
       </div>
       <div
         class="section-content-placeholder"
@@ -132,14 +128,14 @@
           margin-bottom: 40px;
         "
       >
-        <p>Loading assembly content…</p>
+        <p>Loading data link content…</p>
       </div>
     </section>
 
-    <section id="c" data-include="./c.html">
+    <section id="network" data-include="./network.html">
       <div class="section-header">
         <img src="../views/assets/color.png" alt="color" class="color" />
-        <h2 class="section-head">C</h2>
+        <h2 class="section-head">Network</h2>
       </div>
       <div
         class="section-content-placeholder"
@@ -150,14 +146,14 @@
           margin-bottom: 40px;
         "
       >
-        <p>Loading C content…</p>
+        <p>Loading network layer content…</p>
       </div>
     </section>
 
-    <section id="bios" data-include="./bios.html">
+    <section id="transport" data-include="./transport.html">
       <div class="section-header">
         <img src="../views/assets/color.png" alt="color" class="color" />
-        <h2 class="section-head">C</h2>
+        <h2 class="section-head">Transport</h2>
       </div>
       <div
         class="section-content-placeholder"
@@ -168,14 +164,14 @@
           margin-bottom: 40px;
         "
       >
-        <p>Loading BIOS/UEFI content…</p>
+        <p>Loading transport layer content…</p>
       </div>
     </section>
 
-    <section id="bootloader" data-include="./bootloader.html">
+    <section id="dns-http" data-include="./dns-http.html">
       <div class="section-header">
         <img src="../views/assets/color.png" alt="color" class="color" />
-        <h2 class="section-head">C</h2>
+        <h2 class="section-head">DNS and HTTP</h2>
       </div>
       <div
         class="section-content-placeholder"
@@ -186,14 +182,14 @@
           margin-bottom: 40px;
         "
       >
-        <p>Loading BIOS/UEFI content…</p>
+        <p>Loading DNS and HTTP content…</p>
       </div>
     </section>
 
-    <section id="kernel" data-include="./kernel.html">
+    <section id="tls" data-include="./tls.html">
       <div class="section-header">
         <img src="../views/assets/color.png" alt="color" class="color" />
-        <h2 class="section-head">C</h2>
+        <h2 class="section-head">TLS / HTTPS</h2>
       </div>
       <div
         class="section-content-placeholder"
@@ -204,14 +200,14 @@
           margin-bottom: 40px;
         "
       >
-        <p>Loading BIOS/UEFI content…</p>
+        <p>Loading TLS / HTTPS content…</p>
       </div>
     </section>
 
-    <section id="os" data-include="./os.html">
+    <section id="application" data-include="./application.html">
       <div class="section-header">
         <img src="../views/assets/color.png" alt="color" class="color" />
-        <h2 class="section-head">C</h2>
+        <h2 class="section-head">Application</h2>
       </div>
       <div
         class="section-content-placeholder"
@@ -222,7 +218,7 @@
           margin-bottom: 40px;
         "
       >
-        <p>Loading BIOS/UEFI content…</p>
+        <p>Loading application layer content…</p>
       </div>
     </section>
 

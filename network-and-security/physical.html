@@ -1,0 +1,71 @@
+<section id="physical">
+  <div class="section-header">
+    <img src="../views/assets/color.png" alt="color" class="color" />
+    <h2 class="section-head">Physical: Actually Moving the Signal</h2>
+  </div>
+  <div class="p-container">
+    <div>
+      <h3>Introduction</h3>
+      <p style="text-indent: 2em; margin-top: 10px">
+        Every message on the internet eventually has to become something
+        physical, because computers cannot beam thoughts to each other.
+        Over an ethernet cable, that means tiny changes in electrical
+        voltage. Over fiber optic cable, it means pulses of light flashing
+        on and off. Over Wi-Fi, it means changes in a radio wave. The
+        Physical layer is just this: the actual, real-world way that a 1 or
+        a 0 gets turned into something that can travel from one device to
+        another.
+      </p>
+    </div>
+    <div>
+      <p style="margin-top: 10px">
+        It helps to think of it like Morse code with a flashlight. The idea
+        being sent (dot, dot, dash) is separate from the tool sending it
+        (the flashlight). You could send the same Morse code with a mirror,
+        a foghorn, or a flag, and the message would not change even though
+        the physical method did. Networking works the same way: the same 1s
+        and 0s can travel over copper, glass fiber, or radio waves, and
+        every layer above the physical one does not care which method was
+        used, as long as the bits arrive.
+      </p>
+    </div>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>Cables: copper vs fiber</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      Copper cables, like the Cat5e or Cat6 cable that might run from your
+      router to a game console, send data as electrical voltage
+      differences. They are cheap and easy to install but lose signal
+      strength over long distances and can pick up interference from
+      nearby electronics. Fiber optic cables send data as pulses of light
+      through a thin strand of glass instead. Light does not degrade or
+      pick up electrical interference the way voltage does, so fiber can
+      carry data much farther and much faster, which is why it is used for
+      internet backbones that cross cities, countries, and oceans.
+    </p>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>How Wi-Fi turns bits into radio waves</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      Wi-Fi works by having your router's antenna vibrate an electrical
+      current at a specific radio frequency, commonly around 2.4 GHz or 5
+      GHz. The device slightly shifts the wave's timing, height, or phase
+      in patterns that represent your data, a trick called modulation. Your
+      laptop's antenna picks up that vibration in the air and reverses the
+      process to pull the original bits back out. Because it is broadcast
+      through open air instead of a wire, Wi-Fi is more exposed to
+      interference from walls, microwaves, and other networks, which is
+      part of why a wired connection is usually more stable.
+    </p>
+  </div>
+</section>

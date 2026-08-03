@@ -1,0 +1,71 @@
+<section id="dns-http">
+  <div class="section-header">
+    <img src="../views/assets/color.png" alt="color" class="color" />
+    <h2 class="section-head">DNS and HTTP: Names and Requests</h2>
+  </div>
+  <div class="p-container">
+    <div>
+      <h3>Introduction</h3>
+      <p style="text-indent: 2em; margin-top: 10px">
+        Nobody types an IP address into their browser to visit a website,
+        because remembering strings of numbers is awful. Instead, you type
+        a name like example.com, and the Domain Name System, or DNS,
+        translates that name into the actual IP address behind the scenes.
+        DNS works a lot like a phone contacts app: you save a friend's
+        name, and your phone quietly looks up their number for you. DNS
+        servers around the world do the same job, but for every website on
+        the internet.
+      </p>
+    </div>
+    <div>
+      <p style="margin-top: 10px">
+        Once your browser has the IP address, it uses HTTP, or Hypertext
+        Transfer Protocol, to actually ask the server for the webpage. Your
+        browser sends a request that basically says "please send me this
+        page," and the server responds with the page's content along with
+        a status code, like 200 for success or 404 for not found. This
+        request-and-response pattern, one side asking and the other side
+        answering, is the basic conversation that happens every single time
+        you load a page, click a link, or submit a form online.
+      </p>
+    </div>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>DNS caching and why it makes browsing faster</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      Looking up a domain name from scratch takes a small amount of time,
+      so your browser, operating system, and router all keep a short-term
+      memory called a cache of recent lookups. Each DNS answer comes with a
+      time-to-live, or TTL, telling your device how long it is allowed to
+      reuse that answer before checking again. This is why a website
+      might feel slightly slower to load the very first time you visit it
+      compared to visiting it again a few minutes later, since the second
+      time your device already remembers the IP address instead of asking
+      around for it again.
+    </p>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>Common HTTP status codes</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      Status codes are the server's short way of saying how the request
+      went. Codes in the 200s mean success, like 200 meaning "here is your
+      page." Codes in the 300s mean redirection, like 301 meaning "this
+      moved somewhere else, go there instead." Codes in the 400s mean the
+      request itself had a problem, like the famous 404 meaning "that page
+      does not exist," or 403 meaning "you are not allowed to see this."
+      Codes in the 500s mean the server itself broke while trying to
+      handle the request. Recognizing these numbers makes browser error
+      messages far less mysterious.
+    </p>
+  </div>
+</section>

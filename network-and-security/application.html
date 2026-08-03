@@ -1,0 +1,72 @@
+<section id="application">
+  <div class="section-header">
+    <img src="../views/assets/color.png" alt="color" class="color" />
+    <h2 class="section-head">Application: Where People Actually Live</h2>
+  </div>
+  <div class="p-container">
+    <div>
+      <h3>Introduction</h3>
+      <p style="text-indent: 2em; margin-top: 10px">
+        Every layer covered so far exists purely to serve this one: the
+        Application layer, where the protocols that actual programs use
+        live. HTTP for browsing websites, SMTP for sending email, FTP for
+        transferring files, and SSH for securely controlling a remote
+        computer are all Application layer protocols. This is the layer
+        that finally matches up with something you, as a user, actually
+        recognize and interact with, since everything below it is
+        invisible plumbing working quietly in the background.
+      </p>
+    </div>
+    <div>
+      <p style="margin-top: 10px">
+        It helps to picture the whole stack as a postal system. The
+        Application layer is the letter itself, written in a language the
+        recipient understands, like a birthday card or a business
+        contract. The Transport layer is choosing certified mail versus
+        regular mail, the Network layer is the postal routes between
+        cities, the Data Link layer is the mail truck driver knowing which
+        house on the street to deliver to, and the Physical layer is the
+        actual roads the truck drives on. Each layer only worries about its
+        own piece of getting that letter delivered.
+      </p>
+    </div>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>A few common application protocols</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      HTTP and HTTPS handle loading webpages. SMTP handles sending email
+      between mail servers, while IMAP and POP3 handle pulling that email
+      down into your inbox app. FTP transfers files between computers,
+      though it has mostly been replaced by more secure options like SFTP.
+      SSH lets someone securely log into and control a remote computer
+      through a command line, which is heavily used by developers and
+      system administrators. Each of these protocols defines its own set
+      of rules for exactly what a message should look like and how the two
+      sides should respond to each other.
+    </p>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>How this connects back to everything below it</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      When you click a link, the Application layer creates an HTTP
+      request, the Transport layer wraps it with a port number and hands
+      it to TCP for reliable delivery, the Network layer stamps it with
+      source and destination IP addresses, and the Data Link layer wraps
+      it in a frame addressed to the next hop's MAC address, before the
+      Physical layer finally turns it into voltage, light, or radio waves.
+      The server receiving it unwraps this exact same stack in reverse
+      order. Nobody needs to think about all seven or so steps happening,
+      which is exactly the point of building the internet in layers.
+    </p>
+  </div>
+</section>

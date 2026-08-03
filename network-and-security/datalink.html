@@ -1,0 +1,72 @@
+<section id="datalink">
+  <div class="section-header">
+    <img src="../views/assets/color.png" alt="color" class="color" />
+    <h2 class="section-head">Data Link: Finding Your Neighbor</h2>
+  </div>
+  <div class="p-container">
+    <div>
+      <h3>Introduction</h3>
+      <p style="text-indent: 2em; margin-top: 10px">
+        Once bits can physically travel over a cable or radio wave, the
+        next problem is figuring out which device on that same local
+        network the data is actually meant for. Picture a classroom where
+        everyone can hear everyone else, but a note is only for one person.
+        Every device on a network gets a permanent, factory-set ID called a
+        MAC address, kind of like a name tag baked directly into your
+        network card. The Data Link layer's job is to package data into
+        chunks called frames and label them with the sender's and
+        receiver's MAC addresses.
+      </p>
+    </div>
+    <div>
+      <p style="margin-top: 10px">
+        This is also the layer where switches live. A switch is the box
+        with several cable ports that your wired devices plug into at
+        home or school. Instead of blasting every frame out of every port
+        like an old-school hub would, a switch actually learns which MAC
+        address lives on which port and only sends the frame where it
+        needs to go. That is a big deal, because it means your download
+        does not slow down every other device plugged into the same
+        switch.
+      </p>
+    </div>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>ARP: matching an IP address to a MAC address</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      Your device usually knows the IP address it wants to reach, like the
+      IP of your router, but the Data Link layer needs a MAC address to
+      actually build a frame. Address Resolution Protocol, or ARP, solves
+      this by shouting a question onto the local network: "who has this IP
+      address?" The device that owns that IP replies with its MAC address,
+      and your computer stores the answer in a short-term list called an
+      ARP cache so it does not have to ask again for a while. It is
+      basically your computer asking "who is this?" once, then remembering
+      the answer.
+    </p>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>Switches vs hubs and collision domains</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      An old hub was a dumb device: whatever came in one port got copied
+      out to every other port, meaning every device shared the same
+      "collision domain" and had to take turns or risk their signals
+      colliding and getting scrambled. A switch fixed this by building a
+      table that maps MAC addresses to specific ports and only forwarding
+      frames to the port that actually needs them. This gives each
+      connected device its own private lane instead of one shared, noisy
+      hallway, which is a big reason wired networks got dramatically faster
+      once switches replaced hubs.
+    </p>
+  </div>
+</section>

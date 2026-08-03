@@ -1,0 +1,74 @@
+<section id="intro">
+  <div class="section-header">
+    <img src="../views/assets/color.png" alt="color" class="color" />
+    <h2 class="section-head">Intro: What Even Is a Network</h2>
+  </div>
+  <div class="p-container">
+    <div>
+      <h3>Introduction</h3>
+      <p style="text-indent: 2em; margin-top: 10px">
+        Imagine you and your friend want to pass notes in class, but you sit
+        on opposite sides of the room. You cannot just shout it, so you pass
+        the note through five other classmates. For that to work, everyone
+        needs to agree on some basic rules: which direction to pass it, how
+        to know who it is for, and what to do if the note gets dropped. A
+        computer network is the exact same idea, except the "classmates"
+        are cables, Wi-Fi signals, and routers, and the "note" is broken
+        into tiny pieces of data.
+      </p>
+    </div>
+    <div>
+      <p style="margin-top: 10px">
+        When you open a website, your phone or laptop is not talking to the
+        website directly in one single conversation. Your request gets
+        wrapped, passed along, unwrapped, and rewrapped multiple times as it
+        hops from your device, through your Wi-Fi router, out to your
+        internet provider, across the internet, and finally into the
+        server that owns the website. Then the whole thing happens again in
+        reverse to bring the answer back to you. This layered hand-off
+        system is usually explained using a model with names like Physical,
+        Data Link, Network, Transport, and Application. Each layer only
+        worries about its own job, which is why the whole system does not
+        collapse into chaos.
+      </p>
+    </div>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>OSI vs TCP/IP, why two models</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      You will run into two different lists of layers when you read about
+      networking. The OSI model has seven layers and was designed as a
+      teaching tool to describe every possible job a network needs to do.
+      The TCP/IP model, which is what the actual internet runs on, squishes
+      some of those jobs together into four or five layers. Nobody built a
+      real network exactly like OSI describes it. Think of OSI as the
+      textbook diagram and TCP/IP as the version that engineers actually
+      use, sharing the same basic idea of stacking responsibilities on top
+      of each other.
+    </p>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>Why break the job into layers at all</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      Splitting the work into layers means each part of the system can be
+      built, fixed, or replaced without breaking everything else. Your Wi-Fi
+      card does not need to know anything about websites, and a website does
+      not need to know whether you connected over Wi-Fi, a cable, or your
+      phone's mobile data. Engineers who build routers only worry about
+      moving data efficiently, while engineers who build apps only worry
+      about what the data means. This separation is why the internet can
+      keep growing new technology at the bottom, like faster Wi-Fi
+      standards, without every website needing to be rewritten.
+    </p>
+  </div>
+</section>

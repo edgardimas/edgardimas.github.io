@@ -1,0 +1,73 @@
+<section id="tls">
+  <div class="section-header">
+    <img src="../views/assets/color.png" alt="color" class="color" />
+    <h2 class="section-head">TLS / HTTPS: Locking the Conversation</h2>
+  </div>
+  <div class="p-container">
+    <div>
+      <h3>Introduction</h3>
+      <p style="text-indent: 2em; margin-top: 10px">
+        Plain HTTP sends everything, including passwords, in a form that
+        anyone watching the network traffic could read, like sending a
+        postcard instead of a sealed letter. HTTPS fixes this by wrapping
+        HTTP inside TLS, or Transport Layer Security, which encrypts the
+        conversation so that only your device and the server can actually
+        read what is being sent. Even if someone on the same public Wi-Fi
+        captured every packet you sent, encrypted traffic would look like
+        meaningless scrambled noise to them.
+      </p>
+    </div>
+    <div>
+      <p style="margin-top: 10px">
+        Before any encrypted data flows, your browser and the server do a
+        quick negotiation called a TLS handshake, where they agree on
+        encryption methods and exchange a secret key that only the two of
+        them know. The server also proves its identity using a digital
+        certificate, similar to showing an ID card, so your browser can
+        confirm it is really talking to the real example.com and not an
+        imposter pretending to be it. That little padlock icon in your
+        browser's address bar is simply telling you this whole handshake
+        succeeded.
+      </p>
+    </div>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>What a certificate authority actually does</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      Anyone could generate a certificate claiming to be example.com, so
+      certificates only mean something because a trusted third party, a
+      certificate authority, digitally signs them after verifying the
+      website owner actually controls that domain. Your browser ships with
+      a built-in list of certificate authorities it trusts, similar to a
+      list of notaries whose signature it will accept. When a server
+      presents a certificate signed by one of those trusted authorities,
+      the browser accepts it as genuine. If a certificate is missing,
+      expired, or signed by nobody your browser trusts, you get the
+      scary warning page.
+    </p>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>Why the padlock matters, and what it does not promise</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      The padlock only guarantees that your connection to that specific
+      server is encrypted and that the server proved its identity through a
+      valid certificate. It says nothing about whether the website itself
+      is trustworthy, safe, or legitimate in what it does with your data.
+      A scam website can absolutely have a valid certificate and a padlock,
+      since certificates only prove "this really is example.com," not "this
+      website is honest." Treat the padlock as proof your traffic cannot
+      be easily eavesdropped on in transit, not as a general seal of
+      approval.
+    </p>
+  </div>
+</section>

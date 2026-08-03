@@ -1,0 +1,72 @@
+<section id="transport">
+  <div class="section-header">
+    <img src="../views/assets/color.png" alt="color" class="color" />
+    <h2 class="section-head">Transport: Reliable or Fast, Pick One</h2>
+  </div>
+  <div class="p-container">
+    <div>
+      <h3>Introduction</h3>
+      <p style="text-indent: 2em; margin-top: 10px">
+        Getting a packet from one IP address to another is not the whole
+        story, because your device is usually running dozens of programs at
+        once. Your browser, your game, and a chat app might all want to
+        talk to the internet at the same time. The Transport layer solves
+        this using port numbers, which act like apartment numbers inside a
+        single building. The IP address gets you to the right building
+        (device), and the port number gets your data to the right
+        apartment (program).
+      </p>
+    </div>
+    <div>
+      <p style="margin-top: 10px">
+        This layer also decides how strict the delivery needs to be. TCP,
+        which stands for Transmission Control Protocol, checks that every
+        single piece arrived, puts them back in the correct order, and asks
+        for a resend if something goes missing, which is perfect for
+        loading a webpage or downloading a file where nothing can be
+        missing. UDP, or User Datagram Protocol, skips all that checking to
+        move faster, which is why live video calls and online games often
+        use it, since a slightly glitchy frame beats a frozen, laggy one.
+      </p>
+    </div>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>The TCP three-way handshake</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      Before TCP sends any real data, it politely introduces itself using
+      three messages. Your device sends a SYN message, meaning "I want to
+      start talking." The server replies with SYN-ACK, meaning "okay, I
+      hear you, let's talk." Your device replies with ACK, meaning
+      "great, starting now." Only after this quick three-step handshake
+      does actual data start flowing. It might feel like unnecessary small
+      talk, but it confirms both sides are ready and agree on some starting
+      details before any real information gets sent, avoiding wasted
+      effort if one side is not actually listening.
+    </p>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>Why video calls choose UDP over TCP</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      If TCP loses a piece of a webpage, it patiently waits and resends it,
+      which is fine since a webpage can wait half a second longer to be
+      correct. A video call cannot afford that patience, because by the
+      time a resent piece arrives, that moment of the conversation has
+      already passed. UDP just keeps moving forward and lets small pieces
+      go missing, showing up as a brief pixelation or a skipped word rather
+      than a frozen screen. This tradeoff, speed over guaranteed
+      completeness, is exactly why real-time apps like video calls, live
+      streams, and many online games are built on top of UDP instead of
+      TCP.
+    </p>
+  </div>
+</section>
