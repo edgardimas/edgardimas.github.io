@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ed's Explorer Log</title>
+    <link rel="stylesheet" href="../views/styles/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-flex">
+        <div class="logo-brand">
+          <div class="header-logo">
+            <img src="../views/assets/machine.png" alt="logo" />
+          </div>
+          <div class="header-brand">
+            <h1 class="main-brand">Ed's Tech Web Codex</h1>
+            <p class="tagline">Exploring The Universe of Digital Technology</p>
+          </div>
+        </div>
+
+        <div class="nav-wrapper">
+          <button class="menu-toggle" id="menu-toggle">☰</button>
+          <nav>
+            <ul class="nav-container" id="nav-items">
+              <li>
+                <a href="/#welcome">Home</a>
+              </li>
+              <li>
+                <a href="/hardware">Hardware</a>
+              </li>
+              <li>
+                <a href="/software">Software</a>
+              </li>
+              <li><a href="/network">Network & Security</a></li>
+              <li>
+                <a href="/ai" style="text-decoration: underline">AI</a>
+              </li>
+              <li><a href="/author">Author</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="flex-line">
+        <div class="horizontal-line line-red"></div>
+        <div class="horizontal-line line-orange"></div>
+        <div class="horizontal-line line-teal"></div>
+      </div>
+    </header>
+
+    <!-- Sticky Secondary Header -->
+    <nav class="section-nav">
+      <ul class="section-nav-li-container">
+        <li><a href="#intro" class="section-link">Intro</a></li>
+        <li>
+          <a href="#machine-learning" class="section-link"
+            >Machine Learning</a
+          >
+        </li>
+        <li>
+          <a href="#neural-networks" class="section-link"
+            >Neural Networks</a
+          >
+        </li>
+        <li><a href="#training" class="section-link">Training</a></li>
+        <li><a href="#llms" class="section-link">LLMs</a></li>
+        <li><a href="#prompting" class="section-link">Prompting</a></li>
+        <li><a href="#ethics" class="section-link">Ethics / Bias</a></li>
+        <li>
+          <a href="#real-world" class="section-link">Real-World Uses</a>
+        </li>
+      </ul>
+    </nav>
+    <style>
+      html {
+        scroll-padding-top: 30px;
+      }
+    </style>
+
+    <!-- Sections -->
+    <section id="intro" data-include="./intro.html">
+      <div class="section-header">
+        <img src="../views/assets/color.png" alt="color" class="color" />
+        <h2 class="section-head">Intro: What Even Is AI</h2>
+      </div>
+      <div
+        class="section-content-placeholder"
+        style="
+          padding: 20px;
+          background: rgba(255, 255, 255, 0.08);
+          border-radius: 12px;
+          margin-bottom: 40px;
+        "
+      >
+        <p>Loading intro content…</p>
+      </div>
+    </section>
+
+    <section id="machine-learning" data-include="./machine-learning.html">
+      <div class="section-header">
+        <img src="../views/assets/color.png" alt="color" class="color" />
+        <h2 class="section-head">Machine Learning</h2>
+      </div>
+      <div
+        class="section-content-placeholder"
+        style="
+          padding: 20px;
+          background: rgba(255, 255, 255, 0.08);
+          border-radius: 12px;
+          margin-bottom: 40px;
+        "
+      >
+        <p>Loading machine learning content…</p>
+      </div>
+    </section>
+
+    <section id="neural-networks" data-include="./neural-networks.html">
+      <div class="section-header">
+        <img src="../views/assets/color.png" alt="color" class="color" />
+        <h2 class="section-head">Neural Networks</h2>
+      </div>
+      <div
+        class="section-content-placeholder"
+        style="
+          padding: 20px;
+          background: rgba(255, 255, 255, 0.08);
+          border-radius: 12px;
+          margin-bottom: 40px;
+        "
+      >
+        <p>Loading neural network content…</p>
+      </div>
+    </section>
+
+    <section id="training" data-include="./training.html">
+      <div class="section-header">
+        <img src="../views/assets/color.png" alt="color" class="color" />
+        <h2 class="section-head">Training</h2>
+      </div>
+      <div
+        class="section-content-placeholder"
+        style="
+          padding: 20px;
+          background: rgba(255, 255, 255, 0.08);
+          border-radius: 12px;
+          margin-bottom: 40px;
+        "
+      >
+        <p>Loading training content…</p>
+      </div>
+    </section>
+
+    <section id="llms" data-include="./llms.html">
+      <div class="section-header">
+        <img src="../views/assets/color.png" alt="color" class="color" />
+        <h2 class="section-head">LLMs</h2>
+      </div>
+      <div
+        class="section-content-placeholder"
+        style="
+          padding: 20px;
+          background: rgba(255, 255, 255, 0.08);
+          border-radius: 12px;
+          margin-bottom: 40px;
+        "
+      >
+        <p>Loading LLM content…</p>
+      </div>
+    </section>
+
+    <section id="prompting" data-include="./prompting.html">
+      <div class="section-header">
+        <img src="../views/assets/color.png" alt="color" class="color" />
+        <h2 class="section-head">Prompting</h2>
+      </div>
+      <div
+        class="section-content-placeholder"
+        style="
+          padding: 20px;
+          background: rgba(255, 255, 255, 0.08);
+          border-radius: 12px;
+          margin-bottom: 40px;
+        "
+      >
+        <p>Loading prompting content…</p>
+      </div>
+    </section>
+
+    <section id="ethics" data-include="./ethics.html">
+      <div class="section-header">
+        <img src="../views/assets/color.png" alt="color" class="color" />
+        <h2 class="section-head">Ethics and Bias</h2>
+      </div>
+      <div
+        class="section-content-placeholder"
+        style="
+          padding: 20px;
+          background: rgba(255, 255, 255, 0.08);
+          border-radius: 12px;
+          margin-bottom: 40px;
+        "
+      >
+        <p>Loading ethics content…</p>
+      </div>
+    </section>
+
+    <section id="real-world" data-include="./real-world.html">
+      <div class="section-header">
+        <img src="../views/assets/color.png" alt="color" class="color" />
+        <h2 class="section-head">Real-World Uses</h2>
+      </div>
+      <div
+        class="section-content-placeholder"
+        style="
+          padding: 20px;
+          background: rgba(255, 255, 255, 0.08);
+          border-radius: 12px;
+          margin-bottom: 40px;
+        "
+      >
+        <p>Loading real-world uses content…</p>
+      </div>
+    </section>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

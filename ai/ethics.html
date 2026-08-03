@@ -1,0 +1,75 @@
+<section id="ethics">
+  <div class="section-header">
+    <img src="../views/assets/color.png" alt="color" class="color" />
+    <h2 class="section-head">Ethics and Bias: When Learning Goes Wrong</h2>
+  </div>
+  <div class="p-container">
+    <div>
+      <h3>Introduction</h3>
+      <p style="text-indent: 2em; margin-top: 10px">
+        Since AI models learn their patterns from real-world data, and the
+        real world is full of unfair patterns, models can end up copying
+        those same unfair patterns without anyone intending it. If a
+        company's past hiring data mostly favored one group of people for
+        a certain job, a model trained on that history might learn to
+        favor that same group going forward, not because it was told to
+        discriminate, but because it genuinely learned "this is the
+        pattern in the data I was given." This is usually called bias, and
+        it is one of the most serious challenges in building fair AI
+        systems.
+      </p>
+    </div>
+    <div>
+      <p style="margin-top: 10px">
+        Bias is not the only concern. AI systems can be used to create
+        convincing fake images, video, or audio, sometimes called
+        deepfakes, which raises real questions about trust and
+        misinformation. Training on large amounts of internet text also
+        raises questions about consent and copyright, since much of that
+        text was written by people who never agreed to have it used that
+        way. None of these issues have simple, universally agreed-upon
+        answers yet, which is why AI ethics is an active and often
+        debated area of research, not a solved problem with a neat
+        checklist.
+      </p>
+    </div>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>Where bias actually sneaks in</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      Bias can enter a model at several different points. It can come from
+      the training data itself if certain groups or viewpoints are
+      underrepresented or overrepresented. It can come from the labels
+      humans assigned to that data, since human labelers bring their own
+      assumptions to the task. It can even come from which problem
+      engineers chose to solve in the first place and which they ignored.
+      Because bias can sneak in at so many different stages, catching and
+      fixing it usually requires deliberately testing a model against many
+      different groups and situations, rather than assuming good intentions
+      alone are enough.
+    </p>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>Being a critical user of AI</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      You do not need to be an engineer to think critically about AI you
+      encounter. Useful habits include asking who built a given tool and
+      what data it was likely trained on, checking important facts instead
+      of trusting confident-sounding text automatically, and staying aware
+      that images, video, and audio can now be convincingly faked. None of
+      this means avoiding AI entirely, it means treating it the way you
+      would treat any other powerful tool: genuinely useful, but worth
+      understanding well enough to use responsibly rather than blindly.
+    </p>
+  </div>
+</section>

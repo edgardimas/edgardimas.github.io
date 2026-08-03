@@ -1,0 +1,72 @@
+<section id="prompting">
+  <div class="section-header">
+    <img src="../views/assets/color.png" alt="color" class="color" />
+    <h2 class="section-head">Prompting: Talking to the Model</h2>
+  </div>
+  <div class="p-container">
+    <div>
+      <h3>Introduction</h3>
+      <p style="text-indent: 2em; margin-top: 10px">
+        A prompt is simply the text you type in to ask an AI model for
+        something, and it turns out that how you phrase that text can
+        change the quality of the answer a lot. This is because the model
+        is not reading your mind, it is only reacting to the exact words in
+        front of it, similar to how asking a classmate a vague question
+        like "help with math" gets a worse answer than asking "can you
+        explain how to factor a quadratic equation." The clearer and more
+        specific the request, the more the model has to work with when
+        generating its response.
+      </p>
+    </div>
+    <div>
+      <p style="margin-top: 10px">
+        Good prompting usually means giving context the model would not
+        otherwise have, being specific about the format you want, like a
+        list versus a paragraph, and breaking a big task into smaller
+        steps if it is complicated. Some people call this "prompt
+        engineering," which sounds fancier than it usually is in practice.
+        It is less about secret magic phrases and more about communicating
+        clearly, the same skill that makes you a better writer of emails or
+        instructions to another human, just aimed at a model instead.
+      </p>
+    </div>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>Why examples in a prompt help so much</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      If you show a model one or two examples of exactly the kind of
+      output you want before asking your real question, a technique called
+      few-shot prompting, it often performs noticeably better than being
+      asked cold. This works because the model is fundamentally a pattern
+      predictor, so giving it a pattern to continue plays directly to its
+      core strength. It is similar to showing a new employee one correctly
+      filled-out form before asking them to fill out the next one
+      themselves, rather than only giving them a paragraph of written
+      instructions and hoping for the best.
+    </p>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>The model does not actually "know" what it does not know</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      Because an LLM generates answers by predicting plausible next words
+      rather than checking a database of verified facts, it can sound
+      equally confident whether it is right or completely wrong. This is
+      why it matters to double-check important facts, dates, or numbers an
+      AI gives you, especially for anything with real consequences, the
+      same way you would fact-check a claim from a random person online
+      rather than trusting it purely because it was said confidently.
+      Treating AI output as a strong first draft rather than a guaranteed
+      final answer is a healthy habit.
+    </p>
+  </div>
+</section>

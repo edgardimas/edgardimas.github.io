@@ -1,0 +1,75 @@
+<section id="neural-networks">
+  <div class="section-header">
+    <img src="../views/assets/color.png" alt="color" class="color" />
+    <h2 class="section-head">Neural Networks: Loosely Inspired by Brains</h2>
+  </div>
+  <div class="p-container">
+    <div>
+      <h3>Introduction</h3>
+      <p style="text-indent: 2em; margin-top: 10px">
+        A neural network is one specific, very popular way of building a
+        machine learning model, loosely inspired by how neurons in a
+        brain pass signals to each other. Instead of real neurons, it uses
+        simple mathematical units arranged in layers. Data comes in
+        through an input layer, passes through one or more hidden layers
+        that transform it step by step, and comes out through an output
+        layer with the model's final answer. Each connection between units
+        has a weight, one of those adjustable numbers mentioned earlier,
+        controlling how strongly one unit influences the next.
+      </p>
+    </div>
+    <div>
+      <p style="margin-top: 10px">
+        The word "deep" in deep learning simply refers to having many
+        hidden layers stacked on top of each other. Each layer tends to
+        pick up on slightly more complex patterns than the layer before
+        it. In an image recognition network, early layers might learn to
+        detect simple edges and colors, middle layers might combine those
+        into shapes like eyes or ears, and later layers might combine those
+        shapes into a full recognizable face. No human designed those
+        specific stages, they emerged naturally from the training process
+        as the network found what patterns were actually useful.
+      </p>
+    </div>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>Loosely inspired, not a copy of the brain</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      It is tempting to picture a neural network as a tiny digital brain,
+      but that comparison only goes so far. Real neurons are far messier
+      and more complicated, involving chemistry, timing, and biology that
+      artificial neurons do not attempt to replicate. Artificial neural
+      networks borrowed the rough idea of connected units passing signals
+      forward, but the actual math involved is closer to repeated
+      multiplication and addition than to biology. The name stuck mostly
+      for historical reasons from when the field first started, back in
+      the 1940s and 50s, rather than because the two systems truly work
+      the same way.
+    </p>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>Why bigger networks became possible recently</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      Neural networks are not a new idea, but for decades computers simply
+      were not powerful enough to train large ones on large amounts of
+      data in a reasonable amount of time. Two things changed that.
+      First, GPUs, originally built to render video game graphics, turned
+      out to be extremely good at the repeated math neural networks need,
+      since both jobs involve doing the same simple calculation millions
+      of times in parallel. Second, the internet made enormous datasets of
+      text, images, and other examples available to train on. Faster
+      hardware plus more data is a huge part of why AI improved so quickly
+      in recent years.
+    </p>
+  </div>
+</section>

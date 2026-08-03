@@ -1,0 +1,74 @@
+<section id="machine-learning">
+  <div class="section-header">
+    <img src="../views/assets/color.png" alt="color" class="color" />
+    <h2 class="section-head">Machine Learning: Learning From Examples</h2>
+  </div>
+  <div class="p-container">
+    <div>
+      <h3>Introduction</h3>
+      <p style="text-indent: 2em; margin-top: 10px">
+        Machine learning is the part of AI that actually does the
+        "learning." The basic idea is simple: show a computer program a
+        large pile of examples, let it guess an answer, tell it whether the
+        guess was right or wrong, and let it slightly adjust itself to do
+        better next time. Repeat that process millions of times, and the
+        program gradually gets very good at the task, even though nobody
+        ever explicitly told it the rules. It is closer to how you got
+        better at free throws through practice than to how you memorized a
+        times table.
+      </p>
+    </div>
+    <div>
+      <p style="margin-top: 10px">
+        There are a few main flavors of this. In supervised learning, every
+        example comes with the correct answer attached, like a photo
+        labeled "cat" or "not cat," and the program learns by comparing its
+        guesses against those known answers. In unsupervised learning, there
+        are no labels at all, and the program just looks for patterns or
+        groupings on its own, like noticing that certain customers tend to
+        buy similar products. In reinforcement learning, the program learns
+        through trial and error by getting rewards or penalties, similar to
+        training a dog with treats.
+      </p>
+    </div>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>What "training" a model actually means</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      Inside a machine learning model are a huge number of adjustable
+      numbers, often called weights, that control how it turns an input
+      into an output. At the start, these numbers are basically random, so
+      the model's guesses are terrible. Training means feeding it examples,
+      measuring how wrong its guess was using something called a loss
+      function, and then nudging every one of those numbers slightly in the
+      direction that would have made the guess a bit less wrong. This
+      nudging process, repeated over an enormous number of examples, is
+      what slowly turns a random guesser into a genuinely useful model.
+    </p>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>Why more data usually means a better model</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      If you only ever saw pictures of golden retrievers, you might
+      wrongly assume all dogs are golden and fluffy. A machine learning
+      model has the exact same problem, called overfitting to a narrow
+      slice of examples. Feeding it a much larger and more varied set of
+      examples, different dog breeds, angles, lighting, and backgrounds,
+      forces it to learn the actual general pattern of "dog" rather than
+      memorizing specific pictures. This is a big part of why modern AI
+      models are trained on massive datasets: variety and volume genuinely
+      help the model generalize to situations it has never encountered
+      before.
+    </p>
+  </div>
+</section>

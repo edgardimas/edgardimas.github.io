@@ -1,0 +1,74 @@
+<section id="llms">
+  <div class="section-header">
+    <img src="../views/assets/color.png" alt="color" class="color" />
+    <h2 class="section-head">LLMs: Predicting the Next Word</h2>
+  </div>
+  <div class="p-container">
+    <div>
+      <h3>Introduction</h3>
+      <p style="text-indent: 2em; margin-top: 10px">
+        A large language model, or LLM, is a neural network trained on a
+        massive amount of text with one core skill at its heart: guessing
+        which word is likely to come next in a sentence. That sounds far
+        too simple to explain something like ChatGPT, but the trick is
+        scale. After reading enormous amounts of text from books,
+        websites, and articles, predicting the next word well enough
+        actually requires the model to pick up grammar, facts, reasoning
+        patterns, and writing style along the way, since all of that
+        helps make better predictions.
+      </p>
+    </div>
+    <div>
+      <p style="margin-top: 10px">
+        When you chat with an LLM, it is not looking up a stored answer in
+        a database somewhere. It is generating a response one word, or
+        more precisely one token, at a time, each time asking "given
+        everything so far, what is the most likely next piece of text."
+        It strings these predictions together, one after another, until it
+        produces a full sentence, paragraph, or answer. This is also why
+        LLMs can sometimes state confident-sounding but incorrect
+        information, a problem often called hallucination, since the model
+        is optimizing for plausible-sounding text, not for looking facts
+        up in a verified source.
+      </p>
+    </div>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>What a "token" actually is</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      LLMs do not process text one full word at a time, they break text
+      into smaller chunks called tokens, which might be a whole word, part
+      of a word, or even a single punctuation mark. The word "networking,"
+      for example, might get split into pieces like "network" and "ing."
+      This chunking lets the model handle rare words, typos, and made-up
+      words by combining smaller familiar pieces, instead of needing every
+      possible whole word memorized in advance. When you hear about a
+      model's "context window," that number is usually measured in
+      tokens, not plain words.
+    </p>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>The transformer, the architecture behind most LLMs</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      Most modern LLMs are built using a design called the transformer,
+      introduced in a 2017 research paper. Its key idea is a mechanism
+      called attention, which lets the model weigh how relevant every
+      other word in a sentence is when trying to understand or predict one
+      particular word. This is what lets a model correctly connect the
+      word "it" in a long sentence back to the actual noun it refers to,
+      even many words earlier. Before transformers, older architectures
+      struggled to track long-distance relationships like this, which is a
+      big reason transformers took over the field so quickly.
+    </p>
+  </div>
+</section>

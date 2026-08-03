@@ -1,0 +1,72 @@
+<section id="training">
+  <div class="section-header">
+    <img src="../views/assets/color.png" alt="color" class="color" />
+    <h2 class="section-head">Training: Turning Data Into a Model</h2>
+  </div>
+  <div class="p-container">
+    <div>
+      <h3>Introduction</h3>
+      <p style="text-indent: 2em; margin-top: 10px">
+        Training is the actual process of turning a random, useless network
+        into a working model, and it is usually the most expensive and
+        time-consuming part of building AI. It starts with gathering and
+        cleaning a dataset, which can mean anything from millions of
+        labeled photos to a huge scrape of text from books and websites.
+        Messy or biased data at this stage causes problems that show up
+        later, which is why data cleaning, while unglamorous, is one of
+        the most important jobs in the whole process.
+      </p>
+    </div>
+    <div>
+      <p style="margin-top: 10px">
+        Once the data is ready, training happens in repeated rounds called
+        epochs, where the model looks at examples, makes predictions,
+        measures how wrong those predictions were, and adjusts its
+        internal weights slightly using a method called backpropagation.
+        This whole cycle can run for days or even months on powerful
+        computer clusters, especially for today's largest models. Once
+        training finishes, the model's weights are essentially frozen into
+        a final version, sometimes called a checkpoint, which can then be
+        used to make predictions on brand new data it has never seen.
+      </p>
+    </div>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>Training data vs test data</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      If you only ever quiz yourself on questions you already memorized
+      the answers to, you cannot tell whether you actually understand a
+      subject or just memorized it. Machine learning has the same issue,
+      so engineers split their data into a training set, which the model
+      actually learns from, and a separate test set, which the model never
+      sees during training. After training finishes, running the model on
+      that untouched test set reveals whether it genuinely learned useful
+      patterns or just memorized its training examples, a problem called
+      overfitting.
+    </p>
+  </div>
+
+  <div class="dropdown" onclick="toggleDropdown(this)">
+    <span>Why training big models costs so much</span>
+    <span class="arrow">&#9654;</span>
+    <!-- Unicode for '>' triangle -->
+  </div>
+  <div class="dropdown-content">
+    <p>
+      Training a large modern model can involve running specialized chips
+      around the clock for weeks, consuming huge amounts of electricity
+      and costing companies tens of millions of dollars for a single model.
+      This is very different from using the model afterward, called
+      inference, which is far cheaper and is what actually happens when
+      you type a message and get a quick reply. The heavy, expensive lifting
+      happens once, upfront, during training, and the resulting model can
+      then be reused to answer millions of requests relatively cheaply
+      after that.
+    </p>
+  </div>
+</section>
